@@ -1,0 +1,18 @@
+:root{
+    --black: #000000;
+    --Eerie-black: #252525;
+    --gray-8: #141414;
+    --gray-20: #333333;
+    --gary-28: #474747;
+    --taupe-gray: #888888;
+    --gainsboro: #E1E1E1;
+    --light-cyan: #7FCBC9;
+    --strong-cyan: #3B908E;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
