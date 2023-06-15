@@ -18,6 +18,7 @@
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
     height: 100vh;
     font-size: 12px;
 }
@@ -28,7 +29,7 @@ body {
     display: flex;
     height: 50px;
     justify-content: space-around;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--gainsboro);
 
 }
 .profile{
@@ -60,8 +61,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 1px solid var(--gainsboro);
+    border-right: 1px solid var(--gainsboro);
     padding: 0px 10px 0px 10px;
 }
 .search-content{
@@ -84,7 +85,7 @@ input[type="text"]::placeholder {
 .currency-unit{
     margin:0px 10px 0px 0px;
     font-size: 15px;
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--gainsboro);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -94,8 +95,10 @@ input[type="text"]::placeholder {
 
 .header-2{
     display: flex;
-    height: 150px;
+    width: 100%;
+    height: auto;
     justify-content: space-around;
+    align-items: center;
 }
 .social-media{
     overflow: hidden;
@@ -103,14 +106,21 @@ input[type="text"]::placeholder {
 }
 .main-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .list-item{
-    margin: 50px 10px 0px 10px;
-    width: 20px;
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+    list-style: none;
+}
+.profile__img--social{
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 .big-content{
-    margin-top: 25px;
     font-size: 40px;
     font-style: normal;
     text-decoration: underline;
@@ -119,41 +129,54 @@ input[type="text"]::placeholder {
     color: var(--strong-cyan);
 }   
 .Shopping-bag{ 
-    display: flex;
-    width: 150px;
-    overflow: hidden;
-    align-items: center
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
 .shopping-bag-item{
-    padding-bottom: 40px;
-    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
     object-fit: contain;
+}
+.header__nav-bottom{
+    width: 100%;
+    height: 50px;
+    background-color: white;
 }
 .header-3{
     display: flex;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .header-3-item{
-    width: 100px;
+    padding: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    margin: 0px 5px 0px 5px;
+    font-size: 12px;
+}
+.header-3-item select{
+    margin-left: 4px;
+    border: none;
+    color: #7FCBC9;
 }
 .big-banner{
-    height: 650px;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 25px;
 }
 .banner-img{
+    width: 100%;
     height: auto;
     object-fit: contain;
-    width: auto;
 }
 .discount-information{
     width: 1110px;
@@ -210,7 +233,7 @@ input[type="text"]::placeholder {
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: rgba(255,255,255,0.9);
-    color: #141414;
+    color: var(--gray-8);
     top: 150px;
     left: 20px;
 }
@@ -226,7 +249,7 @@ input[type="text"]::placeholder {
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: rgba(255,255,255,0.9);
-    color: #141414;
+    color: var(--gray-8);
     top: 150px;
     left: 320px;
 }
