@@ -306,6 +306,8 @@ main{
 }
 .light-blue{
     color: var(--light-cyan);
+    font-size: 30px;
+    font-weight:500;
 }
 .detail{
     display: flex;
@@ -403,6 +405,7 @@ main{
     align-items: center;
     justify-content: center;
     height: 400px;
+    width: auto;
 }
 
 .introduce img {
@@ -428,4 +431,84 @@ main{
     left: 1475px;
     background-color: white;
     border: 1px solid var(--light-cyan);
+}
+.list-item-under{
+    height: 600px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.list-column{
+    width: 350px;
+}
+.new-product{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.items-new{
+
+}
+.unit{
+    display: flex;
+    width: 400px;
+}
+.text-unit{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px 0px 0px 15px;
+}
+div.unit img{
+    height: 100px;
+    width: 100px;
+}
+.text-unit > p:nth-child(1) {
+    color: var(--light-cyan);
+}
+.discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.discount-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #F5F5F7;
+    width: 900px;
+    height: 200px;
+
+}
+.register-form{
+
+}
+discount-form > h1 {
+    font-weight: normal;
+}
+input{
+    height: 50px;
+    width: 300px;
+    padding: 5px 0px 5px 20px;
+}
+.button{
+    width: 110px;
+    height: 50px;
+    background-color: var(--light-cyan);
+    color: white;
+    font-size: 14px;
+}
+.discount-form h1{
+    margin-bottom: 5px;
+}
+.discount-form p {
+    margin-bottom: 15px;
 }
