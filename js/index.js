@@ -66,3 +66,10 @@ for (let i = 0; i < productItems.length; i++) {
   productItems[i].addEventListener("mouseenter", removeDNoneClass);
   productItems[i].addEventListener("mouseleave", addDNoneClass);
 }
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+})

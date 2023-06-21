@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
@@ -13,6 +14,16 @@
 <body>
     
     <header>
+        <div class="header0">
+            <div class="box-tool">
+                <img src="./imgs/icons/tool.png" alt="" class="img-none">
+                <p class="normal-text">Trang sức</p>
+            </div>
+            <div class="box-tool">
+                <img src="./imgs/icons/search.png" alt="" class="img-none">
+                <img src="./imgs/icons/Person.png" alt="" class="img-special">
+            </div>
+        </div>
         <div class="page-header">
             <div class="header-1">
                 <div class="profile">
@@ -108,7 +119,7 @@
                 </a>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="discount-information">
                 <div class="discount-information-item">
                     <a href=""><img src="https://bizweb.dktcdn.net/100/191/458/themes/802014/assets/banner_1.jpg?1676015117086" alt="" class=""discount-img></a>
@@ -123,10 +134,10 @@
                     <a href=""><img src="https://bizweb.dktcdn.net/100/191/458/themes/802014/assets/banner_4.jpg?1676015117086" alt="" class=""discount-img></a>
                 </div>
             </div>
-            <div class="product-list">
+            <div class="product-list container">
                 <h1 class="light-blue">Danh mục sản phẩm</h1>
                 <hr class="line">
-                <div class="product-img">
+                <div class="product-img container">
                     <div class="product-item">
                         <img src="https://bizweb.dktcdn.net/100/191/458/collections/index-10-min.jpg?v=1491141436857" alt="">
                     <div class="product-img-content1">
@@ -136,28 +147,28 @@
                     </div>
                     <div class="product-item">
                         <img src="https://bizweb.dktcdn.net/100/191/458/collections/index-11-min.jpg?v=1491141492513" alt="">
-                    <div class="product-img-content2">
+                    <div class="product-img-content1">
                         <h5>Nhẫn</h5>
                         <p class="d-none">10 sản phẩm</p>
                     </div>
                     </div>
                     <div class="product-item">
                         <img src="https://bizweb.dktcdn.net/100/191/458/collections/index-08-min.jpg?v=1491141456377" alt="">
-                    <div class="product-img-content3">
+                    <div class="product-img-content1">
                         <h5>Bông tai</h5>
                         <p class="d-none">22 sản phẩm</p>
                     </div>
                     </div>
                     <div class="product-item">
                         <img src="https://bizweb.dktcdn.net/100/191/458/collections/index-09-min.jpg?v=1491141474023" alt="">
-                    <div class="product-img-content4">
+                    <div class="product-img-content1">
                         <h5>Vòng cổ</h5>
                         <p class="d-none">6 sản phẩm</p>
                     </div>
                     </div>
                 </div>
             </div>
-            <div class="hot-deal">
+            <div class="hot-deal container">
                 <h1 class="light-blue">Hot Deal</h1>
                 <hr class="line-2">
                 <section class="splide" aria-label="Splide Basic HTML Example">
@@ -176,7 +187,7 @@
                                 <div class="product-item">
                                     <img src="./imgs/items/bông-taai-biz.png" alt="">
                                 <div class="detail">
-                                    <p class="product-name">Bông tai cao cấp Biz/p>
+                                    <p class="product-name">Bông tai cao cấp Biz</p>
                                     <p class="product-price">350.000VND</p>
                                 </div>
                                 </div>
@@ -250,74 +261,80 @@
             <div class="news">
                 <h1 class="light-blue">Tin tức khuyến mãi</h1>
                 <hr class="line">
-                <div class="product-img-2">
-                    <div class="product-item2">
-                        <img src="./imgs/banner/jewlery.jpg" alt="" class="new-img">
-                    <div class="detail-new">
-                        <div class="new-content">
-                        <h5 class="new-title">Dây chuyền kim cương quý nhất</h5>
-                        <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin</a> . <a href="" class="chi-tiet">3 bình luận</a></p>
+                <div class="your-class">
+                    <div>
+                        <div class="product-item2">
+                            <img src="./imgs/banner/jewlery.jpg" alt="" class="new-img">
+                        <div class="detail-new">
+                            <div class="new-content">
+                            <h5 class="new-title">Dây chuyền kim cương quý nhất</h5>
+                            <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin</a> . <a href="" class="chi-tiet">3 bình luận</a></p>
+                            </div>
+                            <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
+                            <a href="" class="chi-tiet">
+                                <div class="wrapper">
+                                    <div class="link_wrapper">
+                                      <a href="" class="link-detail">Chi tiết</a>
+                                      <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
-                        <a href="" class="chi-tiet">
-                            <div class="wrapper">
-                                <div class="link_wrapper">
-                                  <a href="" class="link-detail">Chi tiết</a>
-                                  <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                      <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                                    </svg>
-                                  </div>
-                                </div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
-                    </div>  
-                    <div class="product-item2">
-                        <img src="./imgs/banner/first-of-post.jpg" alt="" class="new-img">
-                    <div class="detail-new">
-                        <div class="new-content">
-                            <h5 class="new-title">Lựa dây chuyền hợp màu da</h5>
-                            <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin</a> . <a href="" class="chi-tiet">0 bình luận</a></p>
-                            </div>
-                            <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
-                            <a href="" class="chi-tiet">
-                                <div class="wrapper">
-                                    <div class="link_wrapper">
-                                      <a href="" class="link-detail">Chi tiết</a>
-                                      <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                                        </svg>
-                                      </div>
+                    <div>
+                        <div class="product-item2">
+                            <img src="./imgs/banner/first-of-post.jpg" alt="" class="new-img">
+                        <div class="detail-new">
+                            <div class="new-content">
+                                <h5 class="new-title">Lựa dây chuyền hợp màu da</h5>
+                                <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin</a> . <a href="" class="chi-tiet">0 bình luận</a></p>
+                                </div>
+                                <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
+                                <a href="" class="chi-tiet">
+                                    <div class="wrapper">
+                                        <div class="link_wrapper">
+                                          <a href="" class="link-detail">Chi tiết</a>
+                                          <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                            </svg>
+                                          </div>
+                                        </div>
                                     </div>
+                                </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="product-item2">
+                            <img src="./imgs/banner/final45.jpg" alt="" class="new-img">
+                        <div class="detail-new">
+                            <div class="new-content">
+                                <h5 class="new-title">Phong cách phối đồ ấn tượng</h5>
+                                <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin<a href="" class="chi-tiet">9 bình luận</a></p>
                                 </div>
-                            </a>
-                    </div>
-                    </div>
-                    <div class="product-item2">
-                        <img src="./imgs/banner/final45.jpg" alt="" class="new-img">
-                    <div class="detail-new">
-                        <div class="new-content">
-                            <h5 class="new-title">Phong cách phối đồ ấn tượng</h5>
-                            <p class="new-comment">Đăng bởi <a href="" class="chi-tiet">Admin<a href="" class="chi-tiet">9 bình luận</a></p>
-                            </div>
-                            <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
-                            <a href="" class="chi-tiet">
-                                <div class="wrapper">
-                                    <div class="link_wrapper">
-                                      <a href="" class="link-detail">Chi tiết</a>
-                                      <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                                        </svg>
-                                      </div>
+                                <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục. Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên quyến rũ. Bạn sẽ</p>
+                                <a href="" class="chi-tiet">
+                                    <div class="wrapper">
+                                        <div class="link_wrapper">
+                                          <a href="" class="link-detail">Chi tiết</a>
+                                          <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                                            </svg>
+                                          </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
+                  </div>
             </div>
             <div class="introduce2">
                 <div id="carouselExample" class="carousel slide">
@@ -475,7 +492,6 @@
           </div>
     </main>
     <footer class="page-footer">
-        
         <div class="container">
             <div class="footer-content">
             <div class="big-content-footer">
@@ -517,7 +533,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#slider', {
+            // Configuration options
+          }).mount();
+        });
+      </script>
     
     
 </body>
