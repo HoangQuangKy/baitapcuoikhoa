@@ -157,6 +157,14 @@ input[type="text"]::placeholder {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky + .header-3 {
+  padding-top: 102px;
+}
 .header-3-item{
     padding: 14px;
     display: flex;
@@ -180,7 +188,7 @@ input[type="text"]::placeholder {
     object-fit: contain;
 }
 .discount-information{
-    width: 1110px;
+    width: 1170px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -189,9 +197,7 @@ input[type="text"]::placeholder {
     margin: 0 auto;
 }
 .discount-information-item{
-    object-fit: contain;
     height: auto;
-    width: 370px;
     text-align: center;
 }
 .discount-information-item:nth-child(1){
@@ -222,7 +228,7 @@ input[type="text"]::placeholder {
 
 .product-item{
     width: 250px;
-    height: 200px;
+    height: auto;
     margin: 0px 30px 0px 20px;
 }
 .product-img-content1{
@@ -296,6 +302,11 @@ input[type="text"]::placeholder {
     align-items: center;
     overflow: hidden;
     width: auto;
+}
+.hot-deal > .product-img > .product-item > img {
+    
+    aspect-ratio: auto;
+    object-fit: cover;
 }
 main{
     height: auto;
@@ -409,50 +420,10 @@ main{
     justify-content: center;
     height: 400px;
     width: auto;
+    margin-top: 50px;
 }
-
-.introduce img {
-    max-width: 100%;
-    height: auto;
-}
-
-.introduce button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    position: absolute;
-}
-#prevButton{
-    position: absolute;
-    left: 450px;
-    top: 3510px;
-    border: 1px solid var(--gainsboro);
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.next-img{
+#carouselExample{
     object-fit: cover;
-    height: 46px;
-    width: 46px;
-}
-.prev-img{
-    object-fit: cover;
-    height: 46px;
-    width: 46px;
-}
-#nextButton{
-    border: 1px solid var(--gainsboro);
-    height: 50px;
-    width: 50px;
-    top: 3510px;
-    position: absolute;
-    left: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .list-item-under{
     margin-bottom: 50px;
@@ -539,7 +510,10 @@ input{
 .d-none {
     display:  none;
     visibility: hidden;
-    opacity : 0
+    opacity : 0;
+}
+.d-none-special{
+    visibility: hidden;
 }
 .login-box{
     display:flex ;
@@ -559,9 +533,6 @@ input{
 .header-3-item p {
     font-size: 15px;
 }
-.header__nav-bottom{
-    position: fixed;
-}
 footer{
     margin: 50px;
     padding: 30px;
@@ -580,7 +551,7 @@ footer{
     text-align: center;
 }
 .address{
-    height: 16px;
+    height: 21px;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -612,4 +583,74 @@ footer > a {
 }
 .footer-icons{
     margin: 0px 5px 0px 5px;
+}
+.splide{
+    width: 1200px;
+
+}
+.splide__slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_wrapper{
+    position: relative;
+}
+  
+.link-detail{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+  
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+  
+.icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: var(--light-cyan);
+    transition: all .35s;
+}
+.link-detail:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+.link-detail:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -70%;
+}
+@media (max-width: 991.98px) {
+    body{
+        width: 100%;
+        height: 100vh;
+    };
+    header{
+        min-width: 100%;
+    }
 }
