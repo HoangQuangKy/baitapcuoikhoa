@@ -33,19 +33,20 @@
                     <div class="">
                             <p>Hoặc</p>
                     </div>
-                    <div class="login__form">
+                    <form class="login__form" id="login-form" method="get">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                            <label for="floatingPassword">Password</label>  
                         </div>
-                    </div>
-                    <div class="login__button">
-                        <button class="btn btn__login">ĐĂNG NHẬP</button>
-                    </div>
+                        <div class="login__button">
+                            <button class="btn btn__login">ĐĂNG NHẬP</button>
+                        </div>
+                    </form>
+                    
                     <div class="to-forget-password">
                         <div class="text__start-left">
                             <button class="btn hover-underline" id="btn__reget-password">Bạn đã quên mật khẩu?</button>
@@ -118,19 +119,20 @@
                         <div class="">
                                 <p>Hoặc</p>
                         </div>
-                        <div class="login__form">
+                        <form class="login__form" id="register__form">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInp" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="floatingInp" placeholder="name@example.com" name="email">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPasswo" placeholder="Password">
+                                <input type="password" class="form-control" id="floatingPasswo" placeholder="Password" name="password">
                                 <label for="floatingPassword">Create password</label>
                             </div>
-                        </div>
-                        <div class="login__button">
-                            <button class="btn btn__register">ĐĂNG KÝ</button>
-                        </div>
+                            <div class="login__button">
+                                <button class="btn btn__register">ĐĂNG KÝ</button>
+                            </div>
+                        </form>
+                        
                         <div class="to-forget-password"></div>
                     </div>
                     <div class="frame__right to-register">
@@ -147,3 +149,4 @@
     <script src="./js/login.js"></script> 
 </body>
 </html>
+
