@@ -1,6 +1,7 @@
 :root {
     --primary-color: #7fcbc9;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -9,19 +10,8 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.w-478 {
-    width: 478px;
-}
-
-.h-330 {
-    height: 330px;
-}
 .c-black {
     color: #000;
-}
-
-.color-black {
-    color: black;
 }
 
 .text-italic {
@@ -40,24 +30,12 @@ body{
     font-size: 12px;
 }
 
-.f-15 {
-    font-size: 15px;
-}
-
 .mg-l-12 {
     margin-left: 12px;
 }
 
-.mg-l-150 {
-    margin-left: 150px;
-}
-
 .mg-r-12 {
     margin-right: 12px;
-}
-
-.mg-r-8 {
-    margin-right: 8px;
 }
 
 .ui-slider .ui-slider-range {
@@ -597,187 +575,289 @@ body{
     margin-right: 8px;
 }
 
-/* =========================Introduction=============== */
-.introduction {
-    margin-top: 40px;
-    margin-left: 162px;
-}
+/* ======================== Filter Price======================= */
 
-.list-item {
-    display: flex;
-    font-size: 18px;
-}
-
-.list-item .item {
-    list-style: none;
-}
-
-.list-item .item strong span {
-    cursor: pointer;
-    color: var(--primary-color);
-}
-
-.list-item .item a {
-    text-decoration: none;
-    color: #000;
-}
-
-.list-item .item i {
-    font-size: 12px;
-    color: #818181;
-}
-
-/* ========================= Container =================== */
-
-/* ========================= Main ======================== */
-
-.container {
-    max-width: 1200px;
-}
-
-.main--container {
-    width: 75%;
-}
-
-.blog--row {
-    padding-top: 16px;
-    display: flex;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 40px;
-}
-
-.blog--row:last-child {
-    border-bottom: none;
-    margin-bottom: -15px;
-}
-
-.blog--img a img {
-    width: 350px;
-}
-
-.blog--info {
-    margin-left: 22px;
-}
-
-.blog--item__name {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.blog--item__post {
-    color: #898989;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.blog--item__desc {
-    font-size: 17px;
-    margin-bottom: 20px;
-    color: #7d7d7d;
-    line-height: 20px;
-}
-
-.blog--info button {
-    padding: 14px 16px;
-    outline: none;
-    background-color: var(--primary-color);
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 17px;
-    text-transform: uppercase;
-}
-
-.blog--info button:hover {
-    background-color: #141414;
-    cursor: pointer;
-}
-
-/* =============== Sidebar==================== */
-/* ----------------Articel list----------------- */
-.sidebar--container {
+.sidebar--filter__price {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 50px;
     margin-left: 60px;
 }
 
-.sidebar--container .nav--category .dropdown--menu {
-    margin-left: 34px;
-    margin-top: 16px;
-}
-
-.sidebar--container .nav--category .dropdown--menu {
-    display: none;
-}
-
-.article--list .article--title p {
+.filter-title .filter-head {
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+}
+.filter-content {
+    position: relative;
 }
 
-.article--content .nav--list .nav--item a {
-    text-decoration: none;
+.filter-content .slider .circle {
     color: var(--primary-color);
+    position: absolute;
+    bottom: -7px;
+    right: 218px;
 }
 
-.article--content .nav--list .nav--item:hover > .dropdown--menu {
+.filter-content .slider .circle-2 {
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -7px;
+    margin-left: 222px;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.info-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter--start {
+    border: 1px solid #e1e1e1;
+    width: 36%;
     display: block;
+    height: 33px;
+    text-align: center;
+    padding-top: 7px;
 }
 
-.article--content .nav--list .nav--item {
-    font-size: 17px;
-    padding: 13px 0px 13px 10px;
-    padding-bottom: 20px;
-    border-bottom: dotted 1px #e1e1e1;
-    /* border-bottom: 1px solid #ebebeb; */
+.filter--start a {
+    color: #000;
+    text-decoration: none;
 }
 
-/* ----------------------articel tag-------------------- */
-.article--tag {
-    margin-top: 26px;
-    border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 28px;
+.filter--stop {
+    border: 1px solid #e1e1e1;
+    width: 36%;
+    display: block;
+    height: 33px;
+    text-align: center;
+    padding-top: 7px;
 }
 
-.article--tag .title-head p {
+.filter--stop a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-filter-price {
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    padding: 10px 35px;
+    width: 135px;
+}
+
+.btn-filter-price a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ===============Type=================== */
+.type {
+    margin-bottom: 40px;
+    padding-bottom: 110px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.type .type--head {
     font-size: 26px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
-.aside--content .aside--item {
-    color: var(--primary-color);
-    line-height: 40px;
-    border: 1px solid #ebebeb;
-    height: 40px;
-    display: inline-block;
-    padding: 0px 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    border-radius: 3px;
+.type-checkbox form input {
+    margin-right: 12px;
 }
 
-/* -----------------------Articel posts-------------- */
-
-.article--posts {
-    border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 20px;
-}
-.article--posts .posts--title p {
-    font-size: 26px;
-    margin-bottom: 10px;
-    margin-top: 26px;
-}
-.loop--posts {
+.type-checkbox li {
+    color: #6f6f6f;
+    cursor: pointer;
     padding: 10px 10px;
+    min-width: 50%;
+    float: left;
+    padding-right: 8px;
+}
+
+.type-checkbox li span {
+    font-size: 17px;
+}
+
+.type-checkbox li span:hover {
+    color: var(--primary-color);
+}
+
+/* ================== Color ============= */
+
+.color {
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.color .color-head {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.choose--color li {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.choose--color li:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    background-color: #16f05e;
+}
+
+.choose--color li:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    background-color: #31bfdf;
+}
+
+.choose--color li:nth-child(4) {
+    width: 20px;
+    height: 20px;
+    background-color: #898989;
+}
+
+.choose--color li:nth-child(5) {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0801;
+}
+
+.choose--color li {
+    min-width: 20px;
+    float: left;
+    margin-right: 14px;
+}
+
+.choose--color li:hover {
+    cursor: pointer;
+}
+
+/* =================== Trademark =================== */
+.trademark {
+    margin-bottom: 40px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.trademark .trademark--head {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.type-checkbox form input {
+    margin-right: 12px;
+}
+
+.type-checkbox li {
+    color: #6f6f6f;
+    cursor: pointer;
+    padding: 10px 10px;
+    min-width: 50%;
+    float: left;
+    padding-right: 8px;
+}
+
+.type-checkbox li span {
+    font-size: 17px;
+}
+
+.type-checkbox li span:hover {
+    color: var(--primary-color);
+}
+
+/* ====================== Outstanding====================== */
+.outstanding {
+    margin-bottom: 40px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.outstanding-head {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.outstanding-content li {
+    min-width: 100%;
+}
+
+.product-img {
     display: flex;
 }
 
-.loop--posts .loop--info p {
-    margin-left: 10px;
+.product-info {
+    margin-left: 12px;
+}
+
+.product-info .product--title:hover {
+    cursor: pointer;
+}
+
+.outstanding-content li {
+    padding: 12px 0px;
+}
+
+.product--price {
+    font-weight: 600;
     color: var(--primary-color);
 }
 
-/* ================= Footer ============== */
+.all {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.all a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.all i {
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+/* 
+ul :
+box-shadow: 0 0 18px 0 rgba(0,0,0,0.12);
+width: 194px;
+
+a: 
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 16px;
+}
+
+li
+font-size: 14px;
+    line-height: 30px;
+} */
+
+/* ==================== Footer ================== */
 .footer {
     text-align: center;
     margin-bottom: 20px;
