@@ -317,6 +317,7 @@ input[type="text"]::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .splide {
@@ -1093,4 +1094,12 @@ li {
     .address-content>a {
         font-size: 13px;
     }
+}
+
+.product-img-content1>p {
+    display: none;
+}
+
+.product-img-content1:hover p {
+    display: block;
 }

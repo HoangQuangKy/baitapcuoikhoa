@@ -538,32 +538,16 @@
                         </div>
                     </div>
                     <div class="sidebar--filter__price">
-                        <div class="filter-title">
-                            <p class="filter-head">Theo mức giá</p>
-                        </div>
-                        <div class="filter-content">
-                            <div class="directional">
-                                <div class="slider">
-                                    <div class="ui-slider-range ui-corner-all ui-widget-header border-1-solid "></div>
-                                    <i class="circle fa-solid fa-circle"></i>
-                                    <i class="circle-2 fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <form id="range-total">
+                            <input type="range" name="amountRange" min="0" max="1000000" value="0"
+                                oninput="this.form.amountInput.value=this.value" />
+                            <input type="number" name="amountInput" min="0" max="1000000" value="0"
+                                oninput="this.form.amountRange.value=this.value" />
+                            <button class="btn-filter-price">
+                                <a href="" onclick="fliterProducts()">Lọc giá</a>
+                            </button>
+                        </form>
 
-
-                        <div class="info-price">
-                            <div class="filter--start">
-                                <a href="">0</a>
-                            </div>
-                            <div class="mt-0-font-25">-</div>
-                            <div class="filter--stop">
-                                <a href="">10000000</a>
-                            </div>
-                        </div>
-                        <div class="btn-filter-price">
-                            <a href="">Lọc giá</a>
-                        </div>
                     </div>
 
                     <div class="type">
@@ -767,7 +751,7 @@
         </footer>
     </div>
 
-
+    <script src="./js/product.js"></script>
 </body>
 
 </html>
