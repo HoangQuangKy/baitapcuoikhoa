@@ -23,22 +23,23 @@ body {
     font-size: 12px;
 }
 .page-header{
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header-1{
     display: flex;
     height: 50px;
-    justify-content: space-around;
-    border-bottom: 1px solid var(--gainsboro);
-
+    justify-content: space-between; 
 }
 .profile{
     height: 50px;
     width: 150px ;
     overflow: hidden;
-    justify-content: center;
     align-items: center;
     display: flex;
+padding-left: 32px;
 }
 .profile--img{
     width: 20px;
@@ -49,13 +50,26 @@ body {
     height: 50px;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 .contact--info{
-    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact--info p{
+    font-size: 14px;
+    margin: 0;
+    display: block;
+    font-style: italic;
+}
+.contact--info p span{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
 }
 .search{
+    width: 150px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -63,41 +77,42 @@ body {
     margin-left: 10px;
     border-left: 1px solid var(--gainsboro);
     border-right: 1px solid var(--gainsboro);
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
 }
 .search-content{
-    width: 100px;
-}
-input {
-    border-width: 0;
-    border-style: none;
-    border-color: transparent;
-}
-button{
-    border-width: 0;
-    border-style: none;
-    border-color: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    height: auto;
 }
 input[type="text"]::placeholder {
     color: #999;
     font-style: italic;
-  }
+    font-size: 1rem;
+}
+.search button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
 .currency-unit{
     margin:0px 10px 0px 0px;
     font-size: 15px;
-    border-right: 1px solid var(--gainsboro);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 10px 0px 10px;
 }
-
+.currency-unit select{
+    border: none;
+    outline: none;
+}
 .header-2{
     display: flex;
     width: 100%;
     height: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .social-media{
@@ -110,16 +125,23 @@ input[type="text"]::placeholder {
     justify-content: center;
     z-index: 1;
 }
+.main-list li{
+    display: inline-block;
+    margin-left: -18px;
+    padding: 0px 18px;
+    list-style: none;
+}
 .list-item{
     margin-right: 12px;
     width: 15px;
     height: 15px;
     list-style: none;
 }
-.profile__img--social{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.list-item a i{
+    color: #000000;
+}
+.list-item i:hover{
+    color: var(--light-cyan);
 }
 .big-content{
     font-size: 40px;
@@ -160,7 +182,8 @@ input[type="text"]::placeholder {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    left: 0;
+    width: 100%;
 }
 .sticky + .header-3 {
   padding-top: 102px;
@@ -259,7 +282,7 @@ input[type="text"]::placeholder {
     padding-bottom: 16px;
     background-color: rgba(255,255,255,0.9);
     transition: .3s;
-    color: #141414;
+    color: var(--gray-8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -346,13 +369,13 @@ main{
 .news{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 70px 0px 70px 0px
+    margin: 70px 0px 70px 0px;
     height: 500px;
     overflow: hidden;
     width: auto;
 }
+
 .product-item2{
     max-width: 100%;
     height: auto;
@@ -469,20 +492,26 @@ div.unit img{
 .register-form{
 
 }
-discount-form > h1 {
+.discount-form > h1 {
     font-weight: normal;
 }
-input{
+.register-form input{
     height: 50px;
     width: 300px;
     padding: 5px 0px 5px 20px;
+    border: none;
+
 }
-.button{
+.register-form > button{
     width: 110px;
     height: 50px;
     background-color: var(--light-cyan);
     color: white;
     font-size: 14px;
+    border: none;
+}
+.register-form > button:hover{
+    background-color: var(--strong-cyan);
 }
 .discount-form h1{
     margin-bottom: 5px;
@@ -504,7 +533,7 @@ input{
     flex-direction: column;
     position: absolute;
     top : 50px;
-    left: 250px;
+    left: 145px;
     z-index: 2;
 }
 .normal-text{
@@ -524,7 +553,7 @@ footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    border-top: 1px solid var(--taupe-gray);
+    border-top: 1px solid var(--gainsboro);
 }
 .footer.content{
     margin-top: 20px;
@@ -552,11 +581,8 @@ footer{
     max-width: 100%;
     max-height: 100%;
 }
-.address-content > img {
-    object-fit: contain;
-    aspect-ratio: auto;
-    max-width: 100%;
-    height: 25px;
+.address-content > i{
+    margin:5px;
 }
 .address-content > p {
     margin: 0px;
@@ -663,12 +689,6 @@ footer > a {
     flex-direction: row;
     align-items: center;
 }
-.img-special{
-    object-fit: contain;
-    aspect-ratio: auto;
-    max-width: 50%;
-    max-height: 50%;
-}
 .img-none {
     object-fit: contain;
     aspect-ratio: auto;
@@ -678,6 +698,13 @@ footer > a {
 }
 .box-tool > p::first-letter {
     color:var(--light-cyan);
+}
+.text-decoration-none{
+    color: var(--black);
+    font-size: 1.2rem;
+}
+.hover-color-lighCy:hover{
+    color: var(--light-cyan);
 }
 .header-3-item > p {
     margin:0px;
@@ -711,7 +738,7 @@ nav menuitem {
  }
  
  nav {
-    max-width: 100%;
+    max-width: auto;
     padding: 14px;
  }
  
@@ -721,14 +748,15 @@ nav menuitem {
     border-radius:3px;
     position:relative;
     font-size: 15px;
-    margin: 5px 0px 5px 0px;
     padding: 5px;
+    background-color: white;
+
  }
  nav a:hover:before {
     content: '';
-    top:0;left:0;
+    top:0;
+    left:0;
     position:absolute;
-    border:1px solid var(--light-cyan);
     width:100%;
     height:100%;
  }
