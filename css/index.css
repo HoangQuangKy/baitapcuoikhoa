@@ -23,16 +23,18 @@ body {
     height: 100vh;
     font-size: 12px;
 }
-.page-header{
+
+.page-header {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.header-1{
+
+.header-1 {
     display: flex;
     height: 50px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .profile {
@@ -41,7 +43,7 @@ body {
     overflow: hidden;
     align-items: center;
     display: flex;
-padding-left: 32px;
+    padding-left: 32px;
 }
 
 .profile--img {
@@ -55,24 +57,28 @@ padding-left: 32px;
     justify-content: center;
     align-items: center;
 }
-.contact--info{
+
+.contact--info {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact--info p{
+
+.contact--info p {
     font-size: 14px;
     margin: 0;
     display: block;
     font-style: italic;
 }
-.contact--info p span{
+
+.contact--info p span {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
 }
-.search{
+
+.search {
     width: 150px;
     height: 100%;
     display: flex;
@@ -83,7 +89,8 @@ padding-left: 32px;
     border-right: 1px solid var(--gainsboro);
     padding: 0px 5px 0px 5px;
 }
-.search-content{
+
+.search-content {
     width: 90%;
     border: none;
     outline: none;
@@ -95,13 +102,15 @@ input[type="text"]::placeholder {
     font-style: italic;
     font-size: 1rem;
 }
-.search button{
+
+.search button {
     border: none;
     outline: none;
     background: transparent;
 }
-.currency-unit{
-    margin:0px 10px 0px 0px;
+
+.currency-unit {
+    margin: 0px 10px 0px 0px;
     font-size: 15px;
     height: 100%;
     display: flex;
@@ -109,11 +118,13 @@ input[type="text"]::placeholder {
     align-items: center;
     padding: 0px 10px 0px 10px;
 }
-.currency-unit select{
+
+.currency-unit select {
     border: none;
     outline: none;
 }
-.header-2{
+
+.header-2 {
     display: flex;
     width: 100%;
     height: auto;
@@ -132,22 +143,26 @@ input[type="text"]::placeholder {
     justify-content: center;
     z-index: 1;
 }
-.main-list li{
+
+.main-list li {
     display: inline-block;
     margin-left: -18px;
     padding: 0px 18px;
     list-style: none;
 }
-.list-item{
+
+.list-item {
     margin-right: 12px;
     width: 15px;
     height: 15px;
     list-style: none;
 }
-.list-item a i{
+
+.list-item a i {
     color: #000000;
 }
-.list-item i:hover{
+
+.list-item i:hover {
     color: var(--light-cyan);
 }
 
@@ -181,6 +196,7 @@ input[type="text"]::placeholder {
     width: 100%;
     height: 50px;
     background-color: white;
+    z-index: 2;
 }
 
 .header-3 {
@@ -433,11 +449,10 @@ main {
     align-items: center;
     margin: 70px 0px 70px 0px;
     height: 500px;
-    overflow: hidden;
     width: auto;
 }
 
-.product-item2{
+.product-item2 {
     max-width: 100%;
     height: auto;
     width: auto;
@@ -449,6 +464,21 @@ main {
     aspect-ratio: auto;
     max-width: 100%;
     max-height: 100%;
+}
+
+.panel a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.img-special {
+    width: 30px;
+    height: 30px;
 }
 
 .your-class {
@@ -498,6 +528,7 @@ main {
 
 #carouselExample {
     object-fit: cover;
+    width: 100%;
 }
 
 .list-item-under {
@@ -566,17 +597,19 @@ div.unit img {
 
 }
 
-.discount-form > h1 {
+.discount-form>h1 {
     font-weight: normal;
 }
-.register-form input{
+
+.register-form input {
     height: 50px;
     width: 300px;
     padding: 5px 0px 5px 20px;
     border: none;
 
 }
-.register-form > button{
+
+.register-form>button {
     width: 110px;
     height: 50px;
     background-color: var(--light-cyan);
@@ -584,7 +617,8 @@ div.unit img {
     font-size: 14px;
     border: none;
 }
-.register-form > button:hover{
+
+.register-form>button:hover {
     background-color: var(--strong-cyan);
 }
 
@@ -610,7 +644,7 @@ div.unit img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top : 50px;
+    top: 50px;
     left: 145px;
     z-index: 2;
 }
@@ -665,8 +699,9 @@ footer {
     max-width: 100%;
     max-height: 100%;
 }
-.address-content > i{
-    margin:5px;
+
+.address-content>i {
+    margin: 5px;
 }
 
 .address-content>p {
@@ -786,6 +821,7 @@ footer>a {
     flex-direction: row;
     align-items: center;
 }
+
 .img-none {
     object-fit: contain;
     aspect-ratio: auto;
@@ -797,15 +833,18 @@ footer>a {
 .box-tool>p::first-letter {
     color: var(--light-cyan);
 }
-.text-decoration-none{
+
+.text-decoration-none {
     color: var(--black);
     font-size: 1.2rem;
 }
-.hover-color-lighCy:hover{
+
+.hover-color-lighCy:hover {
     color: var(--light-cyan);
 }
-.header-3-item > p {
-    margin:0px;
+
+.header-3-item>p {
+    margin: 0px;
 }
 
 nav menuitem {
@@ -817,26 +856,39 @@ nav menuitem {
 
 nav menuitem>menu {
     position: absolute;
-    pointer-events:none;
- }
- nav > menu { display:flex; }
- 
- nav > menu > menuitem { pointer-events: all; opacity:1; }
- menu menuitem a { white-space:nowrap; display:block; }
-    
- menuitem:hover > menu {
-    pointer-events:initial;
- }
- menuitem:hover > menu > menuitem,
- menu:hover > menuitem{
-    opacity:1;
- }
- nav > menu > menuitem menuitem menu {
-    transform:translateX(100%);
-    top:0; right:0;
- }
- 
- nav {
+    pointer-events: none;
+}
+
+nav>menu {
+    display: flex;
+}
+
+nav>menu>menuitem {
+    pointer-events: all;
+    opacity: 1;
+}
+
+menu menuitem a {
+    white-space: nowrap;
+    display: block;
+}
+
+menuitem:hover>menu {
+    pointer-events: initial;
+}
+
+menuitem:hover>menu>menuitem,
+menu:hover>menuitem {
+    opacity: 1;
+}
+
+nav>menu>menuitem menuitem menu {
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+}
+
+nav {
     max-width: auto;
     padding: 14px;
 }
@@ -850,16 +902,18 @@ nav a {
     padding: 5px;
     background-color: white;
 
- }
- nav a:hover:before {
+}
+
+nav a:hover:before {
     content: '';
-    top:0;
-    left:0;
-    position:absolute;
-    width:100%;
-    height:100%;
- }
- nav > menu > menuitem > menu > menuitem{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav>menu>menuitem>menu>menuitem {
     transition: transform 0.6s, opacity 0.6s;
     transform: translateY(150%);
     opacity: 0;

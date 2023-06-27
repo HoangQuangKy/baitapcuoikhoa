@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!---bostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--splide-->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <!---icon-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--css-->
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 </head>
 </head>
-<body>  
+
+<body>
     <header>
         <div class="header0">
             <div class="box-tool">
@@ -26,7 +30,7 @@
             </div>
             <div class="box-tool">
                 <img src="./imgs/icons/search.png" alt="" class="img-none">
-                <img src="./imgs/icons/Person.png" alt="" class="img-special">
+                <img src="./imgs/icons/Person.png" alt="" class="img-special" onclick="redirectToPage('login.html')">
             </div>
         </div>
         <div class="page-header">
@@ -41,10 +45,11 @@
                         </div>
                         <div class="search">
                             <form action="">
-                                <input type="text" placeholder="search..." class="search-content"></form>
-                                <button>
-                                    <i class="fa fa-search" style="font-size: 14px;"></i>
-                                </button>
+                                <input type="text" placeholder="search..." class="search-content">
+                            </form>
+                            <button>
+                                <i class="fa fa-search" style="font-size: 14px;"></i>
+                            </button>
                             </form>
                         </div>
                         <div class="currency-unit">
@@ -58,74 +63,74 @@
             <div class="border-top"></div>
             <div class="container">
                 <div class="header-2">
-                        <div class="social-media">
-                            <ul class="main-list">
-                                <li class="list-item">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                </li>
-                                <li class="list-item">
-                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                                </li>
-                                <li class="list-item">
-                                    <a href="#"><i class="fa-brands fa-google"></i></a>
-                                </li>
-                                <li class="list-item">
-                                    <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
-                                </li>
-                            </ul>
+                    <div class="social-media">
+                        <ul class="main-list">
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-none login-box">
+                        <div class="create-account">
+                            <img src="./imgs/items/register.png" alt="">
                         </div>
-                        <div class="d-none login-box">
-                            <div class="create-account">
-                                <img src="./imgs/items/register.png" alt="">
-                            </div>
-                            <div class="create-account">
-                                <img src="./imgs/items/login.png" alt="">
-                            </div>
+                        <div class="create-account">
+                            <img src="./imgs/items/login.png" alt="">
                         </div>
-                        <div class="big-content">
-                            <a href="">
-                                <img src="./imgs/blog/logo.webp" alt="">
-                            </a>
-                        </div>
-                        <div class="Shopping-bag">
-                            <img src="./img/Shopping Bag.png" alt="" class="shopping-bag-item">
-                        </div>
+                    </div>
+                    <div class="big-content">
+                        <a href="">
+                            <img src="./imgs/blog/logo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="Shopping-bag">
+                        <img src="./img/Shopping Bag.png" alt="" class="shopping-bag-item">
+                    </div>
                 </div>
             </div>
             <div class="container">
                 <div class="header__nav-bottom">
                     <div class="header-3">
                         <div class="header-3-item">
-                            <a href="./index.html" class="text-decoration-none hover-color-lighCy">Trang chủ</a>
+                            <a href="./index.html" class="text-decoration-none hover-color-lighCy">TRANG CHỦ</a>
                         </div>
                         <nav>
                             <menu>
-                            <menuitem id="d emo1">
-                                <a class="text-decoration-none hover-color-lighCy">Sản phẩm</a>
+                                <menuitem id="demo1">
+                                <a class="text-decoration-none hover-color-lighCy" href="./product.html">SẢN PHẨM</a>
                                 <menu>
-                                <menuitem><a>NHẪN</a></menuitem>
+                                    <menuitem><a href="./product.html">NHẪN</a></menuitem>
                                     <menuitem>
-                                        <a>BÔNG TAI</a>
-                                        <menu>
-                                            <menuitem><a>Bông tai mới</a></menuitem>
-                                            <menuitem><a>Bông tai 2018</a></menuitem>
-                                            <menuitem><a>Bông tai kim cương</a></menuitem>
-                                        </menu>  
+                                    <a href="./product.html">BÔNG TAI</a>
+                                    <menu>
+                                        <menuitem><a href="./product.html">Bông tai mới</a></menuitem>
+                                        <menuitem><a href="./product.html">Bông tai 2018</a></menuitem>
+                                        <menuitem><a href="./product.html">Bông tai kim cương</a></menuitem>
+                                    </menu>
                                     </menuitem>
-                                <menuitem><a>DÂY CHUYỀN</a></menuitem>
-                                <menuitem><a>TRÂM CÀI</a></menuitem>
-                            </menu>
+                                    <menuitem><a href="./product.html">DÂY CHUYỀN</a></menuitem>
+                                    <menuitem><a href="./product.html">TRÂM CÀI</a></menuitem>
+                                </menu>
                         </nav>
                         <div class="header-3-item">
-                            <a class="text-decoration-none hover-color-lighCy">Blog</a>
+                            <a class="text-decoration-none hover-color-lighCy" href="./blog.html">BLOG</a>
                         </div>
                         <div class="header-3-item">
-                            <a class="text-decoration-none hover-color-lighCy">Giới thiệu</a>
+                            <a class="text-decoration-none hover-color-lighCy">GIỚI THIỆU</a>
                         </div>
                         <div class="header-3-item">
-                            <a class="text-decoration-none hover-color-lighCy">Liên hệ</a>
+                            <a class="text-decoration-none hover-color-lighCy">LIÊN HỆ</a>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,14 +143,14 @@
                         <a href="">TRANG CHỦ</a>
                     </div>
                     <div class="header-4-item">
-                        <button class="accordion">SẢN PHẨM</button>
+                        <button class="accordion" onclick="redirectToPage('blog.html')">SẢN PHẨM</button>
                         <div class="panel">
                             <ul>
                                 <li>
-                                    <a href="">Nhẫn</a>
+                                    <a href="">NHẪN</a>
                                 </li>
                                 <li>
-                                    <button class="accordion">Bông tai</button>
+                                    <button class="accordion">BÔNG TAI</button>
                                     <div class="panel">
                                         <ul>
                                             <li>
@@ -160,13 +165,13 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>Dây chuyền</li>
-                                <li>Trâm cài</li>
+                                <li>DÂY CHUYỀN</li>
+                                <li>TRÂM CÀI</li>
                             </ul>
                         </div>
                     </div>
                     <div class="header-4-item">
-                        <a href="">BLOG</a>
+                        <a href="./blog.html">BLOG</a>
                     </div>
                     <div class="header-4-item">
                         <a href="">GIỚI THIỆU</a>
@@ -404,7 +409,8 @@
                                 <div class="new-content">
                                     <h5 class="new-title">Phong cách phối đồ ấn tượng</h5>
                                     <p class="new-comment">Đăng bởi <a href="./blog.html" class="chi-tiet">Admin</a> .
-                                        <a href="./blog.html" class="chi-tiet">9 bình luận</a></p>
+                                        <a href="./blog.html" class="chi-tiet">9 bình luận</a>
+                                    </p>
                                 </div>
                                 <p class="new-text">Thông thường, đồ nữ trang nên có màu sắc cùng tông với trang phục.
                                     Tuy nhiên trong một số trường hợp, sự tương phản giữa chúng lại khiến bạn trở nên
@@ -587,47 +593,50 @@
     <footer class="page-footer">
         <div class="container">
             <div class="footer-content">
-            <div class="big-content-footer">
-                <img src="./imgs/blog/logo.webp" alt="">
-            </div>
-            <p>Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn hảo cho phép quý khách tùy chỉnh màu sắc, bố cục.</p>
-            <div class="address">
-                <div class="address-content">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Ladeco Building, 266 Doi Can Street, Hà Nội,</p>
+                <div class="big-content-footer">
+                    <img src="./imgs/blog/logo.webp" alt="">
                 </div>
-                <div class="address-content">
-                    <i class="fa-solid fa-phone mg-l-12"></i>
-                    <a href="" class="chi-tiet">1900 6750</a>
+                <p>Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn hảo cho phép
+                    quý khách tùy chỉnh màu sắc, bố cục.</p>
+                <div class="address">
+                    <div class="address-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ladeco Building, 266 Doi Can Street, Hà Nội,</p>
+                    </div>
+                    <div class="address-content">
+                        <i class="fa-solid fa-phone mg-l-12"></i>
+                        <a href="" class="chi-tiet">1900 6750</a>
+                    </div>
+                    <div class="address-content">
+                        <i class="fa-solid fa-envelope mg-l-12"></i>
+                        <a href="" class="chi-tiet">support@sapo.vn</a>
+                    </div>
                 </div>
-                <div class="address-content">
-                    <i class="fa-solid fa-envelope mg-l-12"></i>
-                    <a href="" class="chi-tiet">support@sapo.vn</a>
+                <div class="footer-2">
+                    <div class="social-media">
+                        <ul class="main-list">
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© Bản quyền thuộc về
+                    <p class="bold">DQDT Team</p> | Cung cấp bởi <a href="" class="chi-tiet">Sapo</a></p>
                 </div>
             </div>
-            <div class="footer-2">
-                <div class="social-media">
-                    <ul class="main-list">
-                        <li class="list-item">
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#"><i class="fa-brands fa-google"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© Bản quyền thuộc về <p class="bold">DQDT Team</p> | Cung cấp bởi <a href="" class="chi-tiet">Sapo</a></p>
-            </div>
-        </div></div>
-        
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

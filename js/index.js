@@ -48,24 +48,7 @@ splide.mount();
 
 var productItems = document.getElementsByClassName("product-item");
 
-function removeDNoneClass() {
-  var dNoneElement = this.getElementsByClassName("d-none")[0];
-  if (dNoneElement) {
-    dNoneElement.classList.remove("d-none");
-  }
-}
 
-function addDNoneClass() {
-  var dNoneElement = this.getElementsByClassName("d-none")[0];
-  if (dNoneElement) {
-    dNoneElement.classList.add("d-none");
-  }
-}
-
-for (let i = 0; i < productItems.length; i++) {
-  productItems[i].addEventListener("mouseenter", removeDNoneClass);
-  productItems[i].addEventListener("mouseleave", addDNoneClass);
-}
 
 var count = 1
 setTimeout(demo, 500)
