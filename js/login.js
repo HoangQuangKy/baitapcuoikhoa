@@ -15,6 +15,9 @@ loginEle = document.addEventListener("submit", (e) => {
     } else {
         alert("Đăng nhập thất bại");
     }
+    console.log(email);
+    console.log(password);
+    console.log(isLogin);
 })
 function isLoginPage(list, email, password) {
     let isLogin = false;
@@ -24,5 +27,5 @@ function isLoginPage(list, email, password) {
             break;
         }
     }
-    return isLogin = false;
+    return isLogin;
 }
