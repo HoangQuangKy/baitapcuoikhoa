@@ -2,22 +2,10 @@
     --primary-color: #7fcbc9;
 }
 
-body {
-    &.ui-slider-active {
-        cursor: grabbing;
-    }
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
-    
 }
 
 .c-black {
@@ -336,7 +324,7 @@ body {
     padding-bottom: 15px;
 }
 
-.sort-by ul>li {
+.sort-by ul > li {
     background-position: right 10px center;
     line-height: 50px;
     background-image: url(//bizweb.dktcdn.net/100/191/458/themes/802014/assets/ico-select.png?1673604204652);
@@ -386,7 +374,7 @@ body {
     z-index: 12;
 }
 
-.sort-by .menu:hover>.sort-by-sub {
+.sort-by .menu:hover > .sort-by-sub {
     visibility: visible;
     display: block;
     margin-bottom: 0;
@@ -395,7 +383,6 @@ body {
 .sort-by .sort-by-sub .sub-item:hover a {
     color: #007fb8;
 }
-
 .main--container {
     width: 75%;
 }
@@ -409,15 +396,14 @@ body {
 
 /* =================Product view=============== */
 .row-product-view {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    width: auto;
-    height: auto;
-    gap: 20px;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .product-grid {
     position: relative;
+    padding-bottom: 38px;
 }
 
 .product--info {
@@ -425,23 +411,18 @@ body {
     position: relative;
     text-align: center;
 }
-.product-meadi{
-    position: relative;
-}
+
 .overlay {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 82px;
+    top: 82px;
     width: 70px;
     height: 70px;
     background-color: #000;
     border-radius: 50%;
 }
-.product-meadi img{
-    width: 100%;
-}
+
 .product-meadi:hover .overlay {
     cursor: pointer;
     display: block;
@@ -462,7 +443,6 @@ body {
     font-size: 30px;
     color: #fff;
 }
-
 .product-title {
     margin-bottom: 10px;
     font-size: 18px;
@@ -544,10 +524,9 @@ body {
 }
 
 .sale {
-    top: 10%;
+    bottom: 296px;
     position: absolute;
 }
-
 .sale a {
     padding: 6px 20px;
     background-color: var(--primary-color);
@@ -561,7 +540,6 @@ body {
 .sidebar--container {
     width: 25%;
 }
-
 .sidebar--title {
     margin-left: 60px;
     margin-bottom: 40px;
@@ -609,7 +587,6 @@ body {
     font-size: 26px;
     margin-bottom: 16px;
 }
-
 .filter-content {
     position: relative;
 }
@@ -827,7 +804,12 @@ body {
 }
 
 .product-info {
-    margin-left: 12px;
+    /* margin-top: 12px; */
+    text-align: center;
+}
+
+.product-info .product--title {
+    text-align: center;
 }
 
 .product-info .product--title:hover {
@@ -918,174 +900,4 @@ font-size: 14px;
 .footer a {
     text-decoration: none;
     color: var(--primary-color);
-}
-
-.box {
-    --primary: #275efe;
-    --headline: #3F4656;
-    --text: #99A3BA;
-    width: 100%;
-    max-width: 312px;
-    padding: 36px 32px 48px 32px;
-    background: #fff;
-    border-radius: 9px;
-    box-shadow: 0 1px 4px rgba(18, 22, 33, .12);
-
-    h3 {
-        font-family: inherit;
-        font-size: 32px;
-        font-weight: 700;
-        margin: 0 0 20px 0;
-        color: var(--headline);
-
-        span {
-            font-weight: 500;
-        }
-    }
-
-    .values,
-    small {
-        div {
-            display: inline-block;
-            vertical-align: top;
-        }
-    }
-
-    .values {
-        margin: 0;
-        font-weight: 500;
-        color: var(--primary);
-
-        &>div {
-            &:first-child {
-                margin-right: 2px;
-            }
-
-            &:last-child {
-                margin-left: 2px;
-            }
-        }
-    }
-
-    small {
-        color: var(--text);
-        display: block;
-        margin-top: 8px;
-        font-size: 14px;
-    }
-
-    .slider {
-        margin-top: 40px;
-    }
-}
-
-.slider {
-    --primary: #275efe;
-    --handle: #fff;
-    --handle-active: #{mix(white, #275efe, 70%)};
-    --handle-hover: #{mix(white, #275efe, 90%)};
-    --handle-border: 2px solid var(--primary);
-    --line: #cdd9ed;
-    --line-active: var(--primary);
-    height: 23px;
-    width: 100%;
-    position: relative;
-    pointer-events: none;
-
-    .ui-slider-handle {
-        --y: 0;
-        --background: var(--handle);
-        cursor: grab;
-        -webkit-tap-highlight-color: transparent;
-        top: 0;
-        width: 23px;
-        height: 23px;
-        transform: translateX(-50%);
-        position: absolute;
-        outline: none;
-        display: block;
-        pointer-events: auto;
-
-        div {
-            width: 23px;
-            height: 23px;
-            border-radius: 50%;
-            transition: background .4s ease;
-            transform: translateY(calc(var(--y) * 1px));
-            border: var(--handle-border);
-            background: var(--background);
-        }
-
-        &:hover {
-            --background: var(--handle-hover);
-        }
-
-        &:active {
-            --background: var(--handle-active);
-            cursor: grabbing;
-        }
-    }
-
-    svg {
-        --stroke: var(--line);
-        display: block;
-        height: 83px;
-
-        path {
-            fill: none;
-            stroke: var(--stroke);
-            stroke-width: 1;
-        }
-    }
-
-    .active,
-    &>svg {
-        position: absolute;
-        top: -30px;
-        height: 83px;
-    }
-
-    &>svg {
-        left: 0;
-        width: 100%;
-    }
-
-    .active {
-        position: absolute;
-        overflow: hidden;
-        left: calc(var(--l) * 1px);
-        right: calc(var(--r) * 1px);
-
-        svg {
-            --stroke: var(--line-active);
-            position: relative;
-            left: calc(var(--l) * -1px);
-            right: calc(var(--r) * -1px);
-
-            path {
-                stroke-width: 2;
-            }
-        }
-    }
-}
-
-html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-}
-
-* {
-    box-sizing: inherit;
-
-    &:before,
-    &:after {
-        box-sizing: inherit;
-    }
-}
-
-.dribbble {
-    position: fixed;
-    display: block;
-    right: 20px;
-    bottom: 20px;
 }
