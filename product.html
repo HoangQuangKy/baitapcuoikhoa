@@ -457,7 +457,6 @@
 
   <script src="./js/product.js"></script>
 
-
   <script>
     var products = text.contact;
     var productDiv = document.getElementById('product-list');
@@ -579,7 +578,7 @@
 
         var productPrice = document.createElement('div');
         productPrice.classList.add('product-price');
-        productPrice.textContent = product.productPrice + 'Đ';
+        productPrice.textContent = product.productPrice + '.000Đ';
 
         productInfo.appendChild(productTitle);
         productInfo.appendChild(productPrice);
@@ -647,7 +646,7 @@
 
         var productPrice = document.createElement('div');
         productPrice.classList.add('product-price');
-        productPrice.textContent = product.productPrice + '000Đ';
+        productPrice.textContent = product.productPrice + '.000Đ';
 
         productInfo.appendChild(productTitle);
         productInfo.appendChild(productPrice);
@@ -715,7 +714,7 @@
 
         var productPrice = document.createElement('div');
         productPrice.classList.add('product-price');
-        productPrice.textContent = product.productPrice + 'Đ';
+        productPrice.textContent = product.productPrice + '.000Đ';
 
         productInfo.appendChild(productTitle);
         productInfo.appendChild(productPrice);
