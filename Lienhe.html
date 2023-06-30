@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <!--css-->
     <link rel="stylesheet" href="./css/contact.css">
 </head>
+
 <body>
     <header>
         <div class="header0">
@@ -30,7 +32,7 @@
         <div class="page-header">
             <div class="container">
                 <div class="header-1">
-                    <div class="profile">
+                    <div class="profile" id="userName">
                         <a href="./login.html"><img src="./img/Person.png" alt="" class="profile--img"></a>
                     </div>
                     <div class="header-content">
@@ -183,27 +185,31 @@
         </div>
         <div class="main-conent container">
             <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29448.58388451975!2d104.41665851475226!3d22.68832678217497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36ccf82f511b0d17%3A0xae401f277bb02afa!2zdHQuIEPhu5FjIFDDoGksIFjDrW4gTeG6p24sIEjDoCBHaWFuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1688134855166!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29448.58388451975!2d104.41665851475226!3d22.68832678217497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36ccf82f511b0d17%3A0xae401f277bb02afa!2zdHQuIEPhu5FjIFDDoGksIFjDrW4gTeG6p24sIEjDoCBHaWFuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1688134855166!5m2!1svi!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="content">
                 <div class="form-input">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
                         <label for="exampleFormControlInput2" class="form-label">Tên</label>
-                        <input class="form-control" type="text" placeholder="" >
+                        <input class="form-control" type="text" placeholder="">
                         <label for="exampleFormControlInput3" class="form-label">SDT</label>
-                        <input class="form-control" type="number" placeholder="" >
-                      </div>
-                      <div class="mb-3">
+                        <input class="form-control" type="number" placeholder="">
+                    </div>
+                    <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
+                    </div>
                 </div>
                 <div class="contact-text text-body">
                     <div class="text-title">
                         <h6>Theme Trang sức</h6>
-                        <p>Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn hảo cho phép quý khách tùy chỉnh màu sắc, bố cục.</p>
+                        <p>Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn hảo
+                            cho phép quý khách tùy chỉnh màu sắc, bố cục.</p>
                     </div>
                     <div class="">
                         <span style="font-weight: 700;"><i></i>Bộ phận Tư vấn khách hàng</span>
@@ -241,4 +247,16 @@
     </footer>
 
 </body>
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const profileEle = document.getElementById("userName");
+        const email = localStorage.getItem("email");
+        if (email) {
+            profileEle.innerHTML = `
+    <a href="./login.html"><img src="./img/Person.png" alt="" class="profile--img"></a>
+    <p style="display: flex;padding-top:15px; font-size: 15px">${email}</p>`
+        }
+    })
+</script>
+
 </html>

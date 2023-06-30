@@ -1,5 +1,6 @@
 let loginEle = document.getElementById("login-form");
 
+
 loginEle = document.addEventListener("submit", (e) => {
     e.preventDefault();
     let email = e.target.email.value;
@@ -11,7 +12,9 @@ loginEle = document.addEventListener("submit", (e) => {
 
     const isLogin = isLoginPage(listOfEmail, email, password);
     if (isLogin) {
+        localStorage.setItem("email", email)
         alert("Đăng nhập thành công");
+        window.location.href = "./index.html";
     } else {
         alert("Đăng nhập thất bại");
     }

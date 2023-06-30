@@ -10,12 +10,14 @@
     --light-cyan: #7FCBC9;
     --strong-cyan: #3B908E;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100vh;
     font-size: 12px;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -96,7 +98,7 @@ body{
 
 .profile {
     height: 50px;
-    width: 150px;
+    width: 100%;
     overflow: hidden;
     align-items: center;
     display: flex;
@@ -303,7 +305,7 @@ input[type="text"]::placeholder {
     object-fit: contain;
 }
 
-.header-4-item> a {
+.header-4-item>a {
     font-size: 15px;
     text-decoration: none;
     color: #000000;
@@ -360,7 +362,8 @@ input[type="text"]::placeholder {
     border: none;
     background: transparent;
 }
-.box-tool> p::first-letter {
+
+.box-tool>p::first-letter {
     color: var(--light-cyan);
 }
 
@@ -373,7 +376,7 @@ input[type="text"]::placeholder {
     color: var(--light-cyan);
 }
 
-.header-3-item > p {
+.header-3-item>p {
     margin: 0px;
 }
 
@@ -526,6 +529,7 @@ menuitem>menu>menuitem.hover>menu>menuitem {
 li {
     font-size: 15px;
 }
+
 /* ========================Introduction================ */
 .introduction {
     margin-top: 40px;
@@ -585,7 +589,7 @@ main .list-item .item strong span {
     padding-bottom: 15px;
 }
 
-.sort-by ul > li {
+.sort-by ul>li {
     background-position: right 10px center;
     line-height: 50px;
     background-image: url(//bizweb.dktcdn.net/100/191/458/themes/802014/assets/ico-select.png?1673604204652);
@@ -635,7 +639,7 @@ main .list-item .item strong span {
     z-index: 12;
 }
 
-.sort-by .menu-1:hover > .sort-by-sub {
+.sort-by .menu-1:hover>.sort-by-sub {
     visibility: visible;
     display: block;
     margin-bottom: 0;
@@ -644,6 +648,7 @@ main .list-item .item strong span {
 .sort-by .sort-by-sub .sub-item:hover a {
     color: #007fb8;
 }
+
 .main--container {
     width: 75%;
 }
@@ -666,6 +671,7 @@ main .list-item .item strong span {
 .product-grid {
     position: relative;
 }
+
 .product--info {
     text-align: center;
 }
@@ -675,21 +681,24 @@ main .list-item .item strong span {
     position: absolute;
     top: -50%;
     left: -50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
     background-color: #000;
     border-radius: 50%;
 }
-.product-meadi{
+
+.product-meadi {
     width: 100%;
     height: auto;
 }
-.product-meadi img{
+
+.product-meadi img {
     object-fit: fill;
     width: 100%;
     height: auto;
 }
+
 .product-meadi img:hover .overlay {
     cursor: pointer;
     display: block;
@@ -710,6 +719,7 @@ main .list-item .item strong span {
     font-size: 30px;
     color: #fff;
 }
+
 .product-title {
     margin-bottom: 10px;
     font-size: 18px;
@@ -796,6 +806,7 @@ main .list-item .item strong span {
     bottom: 296px;
     position: absolute;
 }
+
 .sale a {
     padding: 6px 20px;
     background-color: var(--primary-color);
@@ -813,6 +824,7 @@ main .list-item .item strong span {
 .sidebar--container {
     width: 25%;
 }
+
 .sidebar--title {
     margin-left: 60px;
     margin-bottom: 40px;
@@ -860,6 +872,7 @@ main .list-item .item strong span {
     font-size: 26px;
     margin-bottom: 16px;
 }
+
 .filter-content {
     position: relative;
 }
@@ -1184,35 +1197,45 @@ font-size: 14px;
     .nav--panel__info {
         display: none;
     }
+
     .nav-social {
         display: none;
     }
+
     .nav--brand a img {
         margin-left: 84px;
     }
+
     .nav--shop i {
         font-size: 30px;
     }
+
     .nav--shop span {
         padding: 6px 10px;
     }
+
     .header--navbar--nav__wrap {
         display: none;
     }
+
     .introduction {
         margin-left: 18px;
     }
+
     .describe {
         display: none;
     }
+
     .sidebar--container {
         display: none;
     }
+
     .product-grid {
         text-align: center;
         align-items: center;
         margin: 0 36px;
     }
+
     .filter {
         display: block;
         color: #fff;
@@ -1224,6 +1247,7 @@ font-size: 14px;
         z-index: 99999;
         font-size: 18px;
     }
+
     .sidebar--container {
         display: block;
         position: fixed;
@@ -1241,27 +1265,34 @@ font-size: 14px;
     .filter:hover .sidebar--container {
         display: block;
     }
+
     .filter-title .filter-head {
         font-size: 24px;
     }
+
     .type {
         width: 110px;
         padding-bottom: 180px;
         border-bottom: 1px solid rgb(235, 235, 235);
     }
+
     .type .type--head p {
         font-size: 24px;
     }
+
     .color {
         width: 100%;
     }
+
     .color .color-head {
         font-size: 24px;
     }
+
     .trademark {
         padding-bottom: 210px;
         border-bottom: 1px solid rgb(235, 235, 235);
     }
+
     .trademark--head p {
         font-size: 24px;
     }

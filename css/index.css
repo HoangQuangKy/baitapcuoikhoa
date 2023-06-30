@@ -40,7 +40,9 @@ body {
 
 .profile {
     height: 50px;
-    width: 150px;
+    width: 100%;
+    text-align: center;
+
     overflow: hidden;
     align-items: center;
     display: flex;

@@ -56,58 +56,66 @@ let product = [
         price: 600000,
         image: './imgs/blog/bong-tai-ngoc-trai.webp'
 
-},
-{   id: 8,
-   name : "Nhẫn đôi kim cương",
-    price : 910.000,
-    image: './img/nhan-doi-kim-cuong.webp'
-},
-{   id: 9,
-   name : "Chìa khóa tình yêu",
-    price: 400.000,
-    image: './img/chia-khoa-TY.webp'
-},
-{   id: 10,
-   name : "Dây chuyền số 8",
-   price : 230.000,
-    image: './img/day-duyen-so8.webp'
-},
-{   id: 11,
-   name : "Vòng cổ đá xanh",
-    price : 300.000,
-    image: './img/vong-co.webp'
-},
-{   id: 12,
-   name : "Nhẫn vòng basis",
-    price : 400.000,
-    image: './img/basis.webp'
-},
-{   id: 13,
-    name : "Bông tai phá cách",
-   price : 740.000,
-    image: './img/bong-tai-pha-cach.webp'
-},
-{   id: 14,
-   name : "Vòng tay tình nhân",
-    price : 690.000,
-    image: './img/vong-tay-tinh-nhan.webp'
-},
-{    id: 15,
-   name : "Nhẫn vòng đặc biệt",
-    price: 999.000,
-    image: './img/nhan-hong-KT.webp'
-} 
-// RENDER 
+    },
+    {
+        id: 8,
+        name: "Nhẫn đôi kim cương",
+        price: 910000,
+        image: './imgs/blog/nhan-kim-cuong.webp'
+    },
+    {
+        id: 9,
+        name: "Chìa khóa tình yêu",
+        price: 400000,
+        image: './imgs/blog/chia-khoa-TY.webp'
+    },
+    {
+        id: 10,
+        name: "Dây chuyền số 8",
+        price: 230000,
+        image: './imgs/blog/day-duyen-so8.webp'
+    },
+    {
+        id: 11,
+        name: "Vòng cổ đá xanh",
+        price: 300000,
+        image: './imgs/blog/vong-co.webp'
+    },
+    {
+        id: 12,
+        name: "Nhẫn vòng basis",
+        price: 400000,
+        image: './imgs/blog/basis.webp'
+    },
+    {
+        id: 13,
+        name: "Bông tai phá cách",
+        price: 740000,
+        image: './imgs/blog/bong-tai-pha-cach.webp'
+    },
+    {
+        id: 14,
+        name: "Vòng tay tình nhân",
+        price: 690000,
+        image: './imgs/blog/vong-tay-tinh-nhan.webp'
+    },
+    {
+        id: 15,
+        name: "Nhẫn vòng đặc biệt",
+        price: 999000,
+        image: './imgs/blog/nhan.webp'
+    },
+    // RENDER 
 ];
-let listCards  = [];
-function initApp(){
-    producst.forEach((value, key) =>{
+let listCards = [];
+function initApp() {
+    product.forEach((value, key) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="image/${producst.image}">
-            <div class="title">${producst.name}</div>
-            <div class="price">${producst.price.toLocaleString()}</div>
+            <img src="${value.image}">
+            <div class="title">${value.name}</div>
+            <div class="price">${value.price.toLocaleString() + 'Đ'}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
         // if (listCards[key]) {
@@ -153,8 +161,8 @@ function reloadCard() {
     total.innerText = totalPrice.toLocaleString() + 'Đ';
     quantity.innerText = count;
 }
-function changeQuantity(key, quantity){
-    if(quantity === 0){
+function changeQuantity(key, quantity) {
+    if (quantity === 0) {
         delete listCards[key];
     } else {
         listCards[key].quantity = quantity;
@@ -162,4 +170,3 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
-

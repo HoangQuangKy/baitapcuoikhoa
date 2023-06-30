@@ -102,3 +102,12 @@ formEle.addEventListener("submit", (e) => {
         }
     }
 });
+window.addEventListener("DOMContentLoaded", () => {
+    const profileEle = document.getElementById("userName");
+    const email = localStorage.getItem("email");
+    if (email) {
+        profileEle.innerHTML = `
+      <a href="./login.html"><img src="./img/Person.png" alt="" class="profile--img"></a>
+      <p style="display: flex;padding-top:15px; font-size: 15px">${email}</p>`
+    }
+})
