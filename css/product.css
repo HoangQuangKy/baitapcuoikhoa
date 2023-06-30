@@ -1178,3 +1178,91 @@ font-size: 14px;
     text-decoration: none;
     color: var(--primary-color);
 }
+
+/* ==============Reponsive================ */
+@media (max-width: 456px) {
+    .nav--panel__info {
+        display: none;
+    }
+    .nav-social {
+        display: none;
+    }
+    .nav--brand a img {
+        margin-left: 84px;
+    }
+    .nav--shop i {
+        font-size: 30px;
+    }
+    .nav--shop span {
+        padding: 6px 10px;
+    }
+    .header--navbar--nav__wrap {
+        display: none;
+    }
+    .introduction {
+        margin-left: 18px;
+    }
+    .describe {
+        display: none;
+    }
+    .sidebar--container {
+        display: none;
+    }
+    .product-grid {
+        text-align: center;
+        align-items: center;
+        margin: 0 36px;
+    }
+    .filter {
+        display: block;
+        color: #fff;
+        background: #7fcbc9;
+        position: fixed;
+        padding: 4px 10px;
+        right: 0;
+        cursor: pointer;
+        z-index: 99999;
+        font-size: 18px;
+    }
+    .sidebar--container {
+        display: block;
+        position: fixed;
+        width: 278px;
+        background: #fff;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 15px;
+        border-left: solid 1px #bbbbbb;
+        overflow: auto;
+        z-index: 100000;
+    }
+
+    .filter:hover .sidebar--container {
+        display: block;
+    }
+    .filter-title .filter-head {
+        font-size: 24px;
+    }
+    .type {
+        width: 110px;
+        padding-bottom: 180px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    .type .type--head p {
+        font-size: 24px;
+    }
+    .color {
+        width: 100%;
+    }
+    .color .color-head {
+        font-size: 24px;
+    }
+    .trademark {
+        padding-bottom: 210px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    .trademark--head p {
+        font-size: 24px;
+    }
+}
