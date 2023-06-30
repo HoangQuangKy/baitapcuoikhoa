@@ -805,6 +805,10 @@ main .list-item .item strong span {
     text-transform: uppercase;
 }
 
+.filter {
+    display: none;
+}
+
 /* ============== Sidebar ================= */
 .sidebar--container {
     width: 25%;
@@ -916,6 +920,10 @@ main .list-item .item strong span {
     background-color: var(--primary-color);
     padding: 10px 35px;
     width: 135px;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    color: #fff;
 }
 
 .btn-filter-price a {
@@ -1171,166 +1179,66 @@ font-size: 14px;
     color: var(--primary-color);
 }
 
-
-
-@media (max-width: 991.98px) {
-    .page-header {
+/* ==============Reponsive================ */
+@media (max-width: 456px) {
+    .nav--panel__info {
         display: none;
-        visibility: hidden;
-        opacity: 0;
     }
-
-    .header0 {
-        display: flex;
-        max-width: 100%;
-        width: auto;
-        height: 55px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 5px;
-        margin: 10px 0px 10px 0px;
-    }
-
-    .discount-information {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        overflow: hidden;
-        gap: 15px;
-        margin: 0 auto;
-    }
-
-    .discount-information-item:nth-child(1) {
-        grid-row: 1/3;
-    }
-
-    .discount-information-item:nth-child(4) {
-        grid-row: 1/3;
-        grid-column: 2/3;
-    }
-
-    .product-img {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 15px
-    }
-
-    .product-img-content1 {
-        bottom: 50px;
-    }
-
-    .intro-content {
-        padding: 0px 50px 0px 50px;
-    }
-
-    .items-new {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .list-item-under {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .list-column {
-        max-width: 100%;
-        width: auto;
-    }
-
-    .text-unit>p {
-        margin: 0px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .page-header {
+    .nav-social {
         display: none;
-        visibility: hidden;
-        opacity: 0;
     }
-
-    .header0 {
-        display: flex;
-        max-width: 100%;
-        width: auto;
-        height: 55px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 5px;
-        margin: 10px 0px 10px 0px;
+    .nav--brand a img {
+        margin-left: 84px;
     }
-
-    .discount-information {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        gap: 15px;
-        margin: 0 auto;
+    .nav--shop i {
+        font-size: 30px;
     }
-
-    .product-img {
-        display: flex;
-        flex-direction: column;
+    .nav--shop span {
+        padding: 6px 10px;
     }
-
-    .product-img-content1 {
-        bottom: 50px;
+    .header--navbar--nav__wrap {
+        display: none;
     }
-
-    .intro-content {
-        padding: 0px 50px 0px 50px;
+    .introduction {
+        margin-left: 18px;
     }
-
-    .items-new {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .describe {
+        display: none;
     }
-
-    .list-item-under {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    .sidebar--container {
+        display: none;
     }
-
-    .list-column {
-        max-width: 100%;
-        width: auto;
-    }
-
-    .text-unit>p {
-        margin: 0px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .address {
-        display: flex;
-        flex-direction: column;
-        height: 120px;
-        justify-content: center;
+    .product-grid {
+        text-align: center;
         align-items: center;
+        margin: 0 36px;
+    }
+    .filter {
+        display: block;
+        color: #fff;
+        background: #7fcbc9;
+        position: fixed;
+        padding: 4px 10px;
+        right: 0;
+        cursor: pointer;
+        z-index: 99999;
+        font-size: 18px;
+    }
+    .sidebar--container {
+        display: block;
+        position: fixed;
+        width: 260px;
+        background: #fff;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 15px;
+        border-left: solid 1px #bbbbbb;
+        overflow: auto;
+        z-index: 100000;
     }
 
-    .address-content>p {
-        font-size: 13px;
+    .filter:hover .sidebar--container {
+        display: block;
     }
-
-    .address-content>a {
-        font-size: 13px;
-    }
-}
-
-.product-img-content1>p {
-    display: none;
-}
-
-.product-img-content1:hover p {
-    display: block;
 }
