@@ -77,4 +77,28 @@ var text = {
     },
     ]
 }
+let formEle = document.getElementById("range-total");
+let productPriceEle = document.getElementsByClassName("product-price");
+let productGridEle = document.getElementsByClassName("product-grid");
 
+formEle.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let price = document.querySelector("input[name='amountRange']").value;
+    let priceNum = Number(price);
+
+    for (let i = 0; i < productPriceEle.length; i++) {
+        let priceText = productPriceEle[i].innerText;
+        let numberPrice = priceText.replace(/\D/g, '');
+        let numberPriceNum = Number(numberPrice);
+
+        if (priceNum === 1000000) {
+            for (let j = 0; j < productGridEle.length; j++) {
+                productGridEle[j].style.display = 'block';
+            }
+        } else if (numberPriceNum <= priceNum) {
+            productGridEle[i].style.display = "block";
+        } else {
+            productGridEle[i].style.display = "none";
+        }
+    }
+});

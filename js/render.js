@@ -4,16 +4,16 @@ console.log(cardEle);
 window.onload = () => {
 
     fetch("https://649c5833048075719237fecf.mockapi.io/san-pham")
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
-        render(data);   
-    })
-    .catch((err) => console.log(err));
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            // render(data);   
+        })
+        .catch((err) => console.log(err));
 };
 
 function render(listItems) {
-    totalHtml ="";
+    totalHtml = "";
     for (let index of listItems) {
         let rawHTML = `
         <div class="product-grid">
@@ -35,8 +35,8 @@ function render(listItems) {
                 <div class="product-price">${index.sell}</div>
             </div>
         </div>
-       `;       
-       totalHtml += rawHTML;
+       `;
+        totalHtml += rawHTML;
     };
     cardEle.innerHTML = totalHtml;
 }
