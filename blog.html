@@ -16,91 +16,176 @@
 </head>
 
 <body>
-    <div class="page container">
-        <div class="page--header">
-            <div class="header--nav">
-                <div class="header--nav--panel">
-                    <div class="header--nav--panel__menu">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="header--nav--panel__wrapper">
-                        <div class="nav--panel__info">
-                            <p>
-                                Gọi ngay :
-                                <a href="">1900 6750</a>
-                                -
-                                <span class="text-italic fw-300 ">Hỗ trợ 7 ngày trong tuần từ 9h - 21h</span>
-                            </p>
-
+    <div class="page">
+        <header>
+            <div class="header0">
+                <div class="box-tool">
+                    <img src="./imgs/icons/tool.png" alt="" id="click-img">
+                    <p class="normal-text">Trang sức</p>
+                </div>
+                <div class="box-tool">
+                    <button class="btn-none">
+                        <i class="fa fa-search hover-color-lighCy" style="font-size: 18px;"></i>
+                    </button>
+                    <img src="./imgs/icons/Person.png" alt="" class="img-special" onclick="redirectToPage('login.html')">
+                </div>
+            </div>
+            <div class="page-header">
+                <div class="container">
+                    <div class="header-1">
+                        <div class="profile">
+                            <a href="./login.html"><img src="./img/Person.png" alt="" class="profile--img"></a>
                         </div>
-                        <div class="nav--panel__search">
-                            <div class="nav__search">
+                        <div class="header-content">
+                            <div class="contact--info">
+                                <p><span>Gọi ngay : 1900 6750</span> - Hỗ trợ 7 ngày trong tuần từ 9h - 21h</p>
+                            </div>
+                            <div class="search">
                                 <form action="">
-                                    <label for="">
-                                        <input type="text" placeholder="Search...">
-                                    </label>
-                                    <button type="sumbit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <input type="text" placeholder="search..." class="search-content">
+                                </form>
+                                <button>
+                                    <i class="fa fa-search" style="font-size: 14px;"></i>
+                                </button>
                                 </form>
                             </div>
+                            <div class="currency-unit">
+                                <select name="" id="">
+                                    <option value="">VND</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="nav--panel__currency">
-                            <a href="#">VND</a>
+                    </div>
+                </div>
+                <div class="border-top"></div>
+                <div class="container">
+                    <div class="header-2">
+                        <div class="social-media">
+                            <ul class="main-list">
+                                <li class="list-item">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none login-box">
+                            <div class="create-account">
+                                <img src="./imgs/items/register.png" alt="">
+                            </div>
+                            <div class="create-account">
+                                <img src="./imgs/items/login.png" alt="">
+                            </div>
+                        </div>
+                        <div class="big-content">
+                            <a href="">
+                                <img src="./imgs/blog/logo.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="Shopping-bag">
+                            <img src="./imgs/blog/Shopping Bag.png" alt="" class="shopping-bag-item">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header__nav-bottom">
+                        <div class="header-3">
+                            <div class="header-3-item">
+                                <a href="./index.html" class="text-decoration-none hover-color-lighCy">TRANG CHỦ</a>
+                            </div>
+                            <nav>
+                                <menu>
+                                    <menuitem id="demo1">
+                                    <a class="text-decoration-none hover-color-lighCy" href="./product.html">SẢN PHẨM</a>
+                                    <menu>
+                                        <menuitem><a href="./product.html">NHẪN</a></menuitem>
+                                        <menuitem>
+                                        <a href="./product.html">BÔNG TAI</a>
+                                        <menu>
+                                            <menuitem><a href="./product.html">Bông tai mới</a></menuitem>
+                                            <menuitem><a href="./product.html">Bông tai 2018</a></menuitem>
+                                            <menuitem><a href="./product.html">Bông tai kim cương</a></menuitem>
+                                        </menu>
+                                        </menuitem>
+                                        <menuitem><a href="./product.html">DÂY CHUYỀN</a></menuitem>
+                                        <menuitem><a href="./product.html">TRÂM CÀI</a></menuitem>
+                                    </menu>
+                            </nav>
+                            <div class="header-3-item">
+                                <a class="text-decoration-none hover-color-lighCy" href="./blog.html">BLOG</a>
+                            </div>
+                            <div class="header-3-item">
+                                <a class="text-decoration-none hover-color-lighCy">GIỚI THIỆU</a>
+                            </div>
+                            <div class="header-3-item">
+                                <a class="text-decoration-none hover-color-lighCy">LIÊN HỆ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header--nav--introduce">
-                <div class="header--nav--midpanel">
-                    <div class="nav-social">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-google"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
-                            </li>
-                        </ul>
+        </header>
+    <main class="container">
+        <!--Giao diện thu nhỏ-->
+        <div class="none">
+            <div class="header__nav-bottom">
+                <div class="header-4">
+                    <div class="header-4-item">
+                        <a href="./index.html">TRANG CHỦ</a>
                     </div>
-                    <div class="nav--brand">
-                        <a href="#">
-                            <img src="./imgs/logo/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="nav--shop">
-                        <div class="nav--shop-toggle">
-                            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                            <span>0</span>
+                    <div class="header-4-item">
+                        <button class="accordion">SẢN PHẨM</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="">NHẪN</a>
+                                </li>
+                                <li>
+                                    <button class="accordion">BÔNG TAI</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>
+                                                <a href="">Bông tai mới</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bông tai 2018</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bông tai kim cương</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">DÂY CHUYỀN</a>
+                                </li>
+                                <li>
+                                    <a href="">CHÂM CÀI</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="header--navbar--nav__wrap">
-                    <ul class="list-item">
-                        <li class="item">
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li class="item">
-                            <a href="./product.html">Sản phẩm</a>
-                            <img src="./img/tick.png" alt="">
-                        </li>
-                        <li class="item">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="item">
-                            <a href="#">Giới thiệu</a>
-                        </li>
-                        <li class="item">
-                            <a href="#">Liên hệ</a>
-                        </li>
-                    </ul>
+                    <div class="header-4-item">
+                        <a href="./blog.html">BLOG</a>
+                    </div>
+                    <div class="header-4-item">
+                        <a href="">GIỚI THIỆU</a>
+                    </div>
+                    <div class="header-4-item">
+                        <a href="">LIÊN HỆ</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!---------------------->
+
         <div class="introduction container">
             <ul class="list-item">
                 <li class="item">
@@ -364,7 +449,7 @@
                 </div>
             </div>
         </div>
-
+    </main>
         <footer>
             <div class="footer-center">
                 <a href="">
