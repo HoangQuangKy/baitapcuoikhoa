@@ -18,6 +18,7 @@
 }
 
 body {
+    background-color: ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: 12px;
@@ -219,7 +220,7 @@ input[type="text"]::placeholder {
 .header-3-item select {
     margin-left: 4px;
     border: none;
-    color: #7FCBC9;
+    color: var(--light-cyan);
 }
 
 .header-3-item>a {
@@ -229,10 +230,19 @@ input[type="text"]::placeholder {
 }
 
 #demo1>a {
+    border: none;
     font-size: 15px;
     text-decoration: none;
     color: #000000;
+    background-color: white;
 }
+menuitem >a{
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    color: var(--black);
+    background-color: whitesmoke;
+}
+
 
 .big-banner {
     width: 100%;
@@ -249,7 +259,7 @@ input[type="text"]::placeholder {
 .header-4-item>a {
     font-size: 15px;
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
 
 .img-special {
@@ -377,7 +387,6 @@ nav a {
     position: relative;
     font-size: 15px;
     padding: 5px;
-    background-color: white;
 
 }
 
@@ -560,6 +569,13 @@ main{
 .main-conent{
     width: 100%;
 }
+.link-page{
+}
+.link-page a{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black);
+}
 .google-map{
     width: 100%;
     height: 400px;
@@ -577,12 +593,30 @@ main{
     flex-direction: row;
 }
 .form-input{
+    position: relative;
+    height: 470px;
     width: 70%;
 }
 .contact-text{
     margin-left: 20px;
 }
-
+.text-body >p{
+    margin: 0;
+}
+.btn.btn-primary{
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    color: white;
+    background-color: var(--light-cyan);
+}
+.btn-primary:hover {
+    background-color: var(--black);
+}
+.center-item{
+    position: absolute;
+    right: 0;
+}
 /* ================= Footer ============== */
 footer{
     position: relative;
@@ -631,8 +665,23 @@ footer{
     color: var(--primary-color);
 }
 
-
-
+@media (max-width: 1198px) {
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-input{
+        width: 100%;
+        height: 450px;
+    }
+    .text-title h6{
+        margin: 0;
+    }
+    main{
+        margin-bottom: 30px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .page-header {
@@ -693,6 +742,16 @@ footer{
 
     .text-unit>p {
         margin: 0px;
+    }
+    footer{
+        margin: 30px 0px 30px 0px;
+        border-top: 1px solid var(--gainsboro);
+    }
+    .footer-center{
+        width: 70%;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,0);
     }
 }
 
