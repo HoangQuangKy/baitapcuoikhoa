@@ -124,7 +124,7 @@
             <div class="sort-by">
               <ul>
                 <li class="menu">
-                  <span class="f-17">Sắp xếp</span>
+                  <span class="f-17" id="sortText">Sắp xếp</span>
                   <ul class="sort-by-sub">
                     <li class="sub-item">
                       <a href="">Mặc định</a>
@@ -135,7 +135,7 @@
                     </li>
 
                     <li class="sub-item">
-                      <a href="">Z <i class="f-12 fa-solid fa-arrow-right"> </i> A</a>
+                      <a href="" id="sortZA">Z <i class="f-12 fa-solid fa-arrow-right"> </i> A</a>
                     </li>
 
                     <li class="sub-item">
@@ -502,9 +502,11 @@
 
   <script>
     var sortLink = document.getElementById('sortAZ');
+    var sortTextEle = document.getElementById("sortText");
 
     sortLink.addEventListener('click', function (event) {
       event.preventDefault();
+      sortTextEle.innerText = `A->Z`
 
       // Sắp xếp mảng sản phẩm theo tên (tăng dần)
       products.sort(function (a, b) {
@@ -577,13 +579,91 @@
 
   </script>
   <script>
-
-    var sortLink = document.getElementById('sortTang');
-
+    var sortLink = document.getElementById('sortZA');
+    var sortTextEle = document.getElementById("sortText");
 
     sortLink.addEventListener('click', function (event) {
       event.preventDefault();
+      sortTextEle.innerText = `Z->A`
 
+      // Sắp xếp mảng sản phẩm theo tên (tăng dần)
+      products.sort(function (a, b) {
+        var titleA = a.productTitle.toUpperCase();
+        var titleB = b.productTitle.toUpperCase();
+
+        if (titleA < titleB) {
+          return 1;
+        }
+        if (titleA > titleB) {
+          return -1;
+        }
+        return 0;
+      });
+
+      // Xóa các sản phẩm đã hiển thị
+      productDiv.innerHTML = '';
+
+      // Hiển thị các sản phẩm đã được sắp xếp theo tên
+      for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+
+        var productGrid = document.createElement('div');
+        productGrid.classList.add('product-grid');
+
+        var productMedia = document.createElement('div');
+        productMedia.classList.add('product-media');
+
+        var productLink = document.createElement('a');
+        productLink.href = '';
+
+        var productImage = document.createElement('img');
+        productImage.src = product.image;
+        productImage.alt = '';
+        productLink.appendChild(productImage);
+
+        var overlayDiv = document.createElement('div');
+        overlayDiv.classList.add('overlay');
+
+        var overlayIconDiv = document.createElement('div');
+        overlayIconDiv.classList.add('overlay-icon');
+
+        var icon = document.createElement('i');
+        icon.classList.add('fa-solid', 'fa-bag-shopping');
+        overlayIconDiv.appendChild(icon);
+
+        overlayDiv.appendChild(overlayIconDiv);
+        productMedia.appendChild(productLink);
+        productMedia.appendChild(overlayDiv);
+        productGrid.appendChild(productMedia);
+
+        var productInfo = document.createElement('div');
+        productInfo.classList.add('product-info');
+
+        var productTitle = document.createElement('div');
+        productTitle.classList.add('product-title');
+        productTitle.textContent = product.productTitle;
+
+        var productPrice = document.createElement('div');
+        productPrice.classList.add('product-price');
+        productPrice.textContent = product.productPrice + '.000Đ';
+
+        productInfo.appendChild(productTitle);
+        productInfo.appendChild(productPrice);
+        productGrid.appendChild(productInfo);
+
+        productDiv.appendChild(productGrid);
+      }
+    });
+
+  </script>
+  <script>
+
+    var sortLink = document.getElementById('sortTang');
+    var sortTextEle = document.getElementById("sortText");
+
+    sortLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      sortTextEle.innerText = `Giá tăng dần`
       // Sắp xếp mảng sản phẩm theo tên (tăng dần)
       products.sort((a, b) => a.productPrice - b.productPrice);
 
@@ -647,11 +727,11 @@
   <script>
     // Lấy phần tử <a> bằng id
     var sortLink = document.getElementById('sortGiam');
-
+    var sortTextEle = document.getElementById("sortText");
     // Gắn sự kiện onClick cho phần tử <a>
     sortLink.addEventListener('click', function (event) {
       event.preventDefault(); // Ngăn chặn hành vi mặc định của phần tử <a>
-
+      sortTextEle.innerText = `Giá giảm dần`
       // Sắp xếp mảng sản phẩm theo tên (tăng dần)
       products.sort((a, b) => b.productPrice - a.productPrice);
 

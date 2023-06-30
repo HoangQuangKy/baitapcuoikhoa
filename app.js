@@ -17,92 +17,92 @@ let product = [
     {
         id: 1,
         name: "Nhẫn ngọc trai cao cấp",
-        price: 998.000,
+        price: 998000,
         image: './imgs/blog/nhan-ngoc-trai.webp'
     },
     {
         id: 2,
         name: "Vòng tay cao cấp",
-        price: 500.000,
+        price: 500000,
         image: './imgs/blog/vong-tay-bk.webp'
     },
     {
         id: 3,
         name: "Nhẫn vàng cao cấp",
-        price: 400.000,
+        price: 400000,
         image: './imgs/blog/nhan-vang.webp'
     },
     {
         id: 4,
         name: "Nhẫn kim cương cao cấp",
-        price: 700.000,
+        price: 700000,
         image: './imgs/blog/nhan-doi-kim-cuong.webp'
     },
     {
         id: 5,
         name: "Nhẫn tình yêu",
-        price: 900.000,
+        price: 900000,
         image: './imgs/blog/nhan-tinh-yeu.webp'
     },
     {
         id: 6,
         name: "Bông tai cao cấp",
-        price: 500.000,
+        price: 500000,
         image: './imgs/blog/bong-tai-cc.webp'
     },
     {
         id: 7,
         name: "Bông tai ngọc trai",
-        price: 600.000,
+        price: 600000,
         image: './imgs/blog/bong-tai-ngoc-trai.webp'
 
     },
     {
         id: 8,
         name: "Nhẫn đôi kim cương",
-        price: 910.000,
+        price: 910000,
         image: './imgs/blog/nhan-kim-cuong.webp'
     },
     {
         id: 9,
         name: "Chìa khóa tình yêu",
-        price: 400.000,
+        price: 400000,
         image: './imgs/blog/chia-khoa-TY.webp'
     },
     {
         id: 10,
         name: "Dây chuyền số 8",
-        price: 230.000,
+        price: 230000,
         image: './imgs/blog/day-duyen-so8.webp'
     },
     {
         id: 11,
         name: "Vòng cổ đá xanh",
-        price: 300.000,
+        price: 300000,
         image: './imgs/blog/vong-co.webp'
     },
     {
         id: 12,
         name: "Nhẫn vòng basis",
-        price: 400.000,
+        price: 400000,
         image: './imgs/blog/basis.webp'
     },
     {
         id: 13,
         name: "Bông tai phá cách",
-        price: 740.000,
+        price: 740000,
         image: './imgs/blog/bong-tai-pha-cach.webp'
     },
     {
         id: 14,
         name: "Vòng tay tình nhân",
-        price: 690.000,
+        price: 690000,
         image: './imgs/blog/vong-tay-tinh-nhan.webp'
     },
     {
         id: 15,
         name: "Nhẫn vòng đặc biệt",
-        price: 999.000,
+        price: 999000,
         image: './imgs/blog/nhan.webp'
     },
     // RENDER 
@@ -115,7 +115,7 @@ function initApp() {
         newDiv.innerHTML = `
             <img src="${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString() + '.000Đ'}</div>
+            <div class="price">${value.price.toLocaleString() + 'Đ'}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
         // if (listCards[key]) {
@@ -128,6 +128,7 @@ function addToCard(key) {
     if (listCards[key] == null) {
         listCards[key] = JSON.parse(JSON.stringify(product[key]));
         listCards[key].quantity = 1;
+
     }
     else {
         listCards[key].quantity++;
@@ -141,13 +142,14 @@ function reloadCard() {
     let totalPrice = 0;
     listCards.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
+        console.log(value.price)
         count = count + value.quantity;
         if (value != null) {
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div><img src="${value.image}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString() + '.000Đ'}</div>
+                <div>${value.price.toLocaleString() + 'Đ'}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
@@ -156,7 +158,7 @@ function reloadCard() {
             listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString() + '.000Đ';
+    total.innerText = totalPrice.toLocaleString() + 'Đ';
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity) {
