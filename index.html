@@ -25,11 +25,13 @@
     <header>
         <div class="header0">
             <div class="box-tool">
-                <img src="./imgs/icons/tool.png" alt="" class="img-none" id="click-img">
+                <img src="./imgs/icons/tool.png" alt="" id="click-img">
                 <p class="normal-text">Trang sức</p>
             </div>
             <div class="box-tool">
-                <img src="./imgs/icons/search.png" alt="" class="img-none">
+                <button class="btn-none">
+                    <i class="fa fa-search hover-color-lighCy" style="font-size: 18px;"></i>
+                </button>
                 <img src="./imgs/icons/Person.png" alt="" class="img-special" onclick="redirectToPage('login.html')">
             </div>
         </div>
@@ -141,10 +143,10 @@
             <div class="header__nav-bottom">
                 <div class="header-4">
                     <div class="header-4-item">
-                        <a href="">TRANG CHỦ</a>
+                        <a href="./index.html">TRANG CHỦ</a>
                     </div>
                     <div class="header-4-item">
-                        <button class="accordion" onclick="redirectToPage('blog.html')">SẢN PHẨM</button>
+                        <button class="accordion">SẢN PHẨM</button>
                         <div class="panel">
                             <ul>
                                 <li>
@@ -166,8 +168,12 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>DÂY CHUYỀN</li>
-                                <li>TRÂM CÀI</li>
+                                <li>
+                                    <a href="">DÂY CHUYỀN</a>
+                                </li>
+                                <li>
+                                    <a href="">CHÂM CÀI</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -586,7 +592,7 @@
                     </p>
                     <form action="" class="register-form">
                         <input type="email" name="email" id="email" placeholder="Email của bạn">
-                        <button class="button">Đăng ký</button>
+                        <button class="button" onclick="p">Đăng ký</button>
                     </form>
                 </div>
             </div>

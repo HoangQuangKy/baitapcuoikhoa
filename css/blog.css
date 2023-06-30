@@ -1,12 +1,22 @@
 :root {
     --primary-color: #7fcbc9;
+    --black: #000000;
+    --Eerie-black: #252525;
+    --gray-8: #141414;
+    --gray-20: #333333;
+    --gary-28: #474747;
+    --taupe-gray: #888888;
+    --gainsboro: #E1E1E1;
+    --strong-cyan: #3B908E;
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+ol, ul {
+    padding-left: 0;
+}
 .w-478 {
     width: 478px;
 }
@@ -289,11 +299,9 @@
 }
 
 /* ========================Introduction================ */
-.introduction {
-    margin-top: 40px;
-    margin-left: 162px;
+.introduction{
+    margin-top: 30px;
 }
-
 .list-item {
     display: flex;
     font-size: 18px;
@@ -319,20 +327,14 @@
 }
 
 /* =================== Container ============ */
-.container {
-    margin-bottom: 40px;
-    padding-bottom: 70px;
+.container1 {
+    width: 100%;
+    height: auto;
     border-bottom: 1px solid rgb(235, 235, 235);
     display: flex;
-    max-width: 1200px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    flex-direction: row;
 }
-
-.container ul {
+.container1 ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -596,10 +598,6 @@
 }
 
 /* =========================Introduction=============== */
-.introduction {
-    margin-top: 40px;
-    margin-left: 162px;
-}
 
 .list-item {
     display: flex;
@@ -629,9 +627,7 @@
 
 /* ========================= Main ======================== */
 
-.container {
-    max-width: 1200px;
-}
+
 
 .main--container {
     width: 75%;
@@ -776,43 +772,106 @@
 }
 
 /* ================= Footer ============== */
-.footer {
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.footer-center {
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.footer .desc {
+.footer-center .desc {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.footer .phone {
+.footer-center .phone {
     color: var(--primary-color);
 }
 
-.footer .email {
+.footer-center .email {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.footer .social {
+.footer-center .social {
     margin-top: 14px;
 }
 
-.footer .social i {
+.footer-center .social i {
     padding: 0px 10px;
     margin-bottom: 10px;
 }
 
-.footer .social i:hover {
+.footer-center .social i:hover {
     color: var(--primary-color);
 }
 
-.footer .DQDT {
+.footer-center .DQDT {
     color: #88888b;
 }
 
-.footer a {
+.footer-center a {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }  
+    .main--container{
+        width: 100%;
+    }
+    .list--blog{
+        width: 100%;
+    }
+    .sidebar--container{
+        margin: 0;
+        width: auto;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 767.89px) {
+    .blog--row{
+        display: block;
+    }
+    .blog--info {
+        margin-left: 0px;
+    }
+    footer{
+        margin: 30px 0px 30px 0px;
+        border-top: 1px solid var(--gainsboro);
+    }
+    .footer-center{
+        width: 70%;
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+    .blog--img a img {
+        width: 490px;
+        object-fit: contain;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 510px) {
+    .blog--img a img {
+        width: 100%;
+        object-fit: fill;
+    }
 }
