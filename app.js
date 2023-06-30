@@ -90,18 +90,18 @@ let producst = [
    name : "Nhẫn vòng đặc biệt",
     price: 999.000,
     image: './img/nhan-hong-KT.webp'
-}, 
+} 
 // RENDER 
 ];
 let listCards  = [];
 function initApp(){
-    products.forEach((value, key) =>{
+    producst.forEach((value, key) =>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
             <img src="image/${producst.image}">
-            <div class="title">${product.name}</div>
-            <div class="price">${product.price.toLocaleString()}</div>
+            <div class="title">${producst.name}</div>
+            <div class="price">${producst.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
     })
@@ -140,7 +140,7 @@ function reloadCard(){
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity)
-    if(quantity == 0){
+    if(quantity === 0){
         delete listCards[key];
     }else{
         listCards[key].quantity = quantity;
