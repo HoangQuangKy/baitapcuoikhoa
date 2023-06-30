@@ -958,7 +958,7 @@ font-size: 14px;
     .sidebar--container {
         display: block;
         position: fixed;
-        width: 260px;
+        width: 278px;
         background: #fff;
         top: 0;
         bottom: 0;
@@ -971,5 +971,29 @@ font-size: 14px;
 
     .filter:hover .sidebar--container {
         display: block;
+    }
+    .filter-title .filter-head {
+        font-size: 24px;
+    }
+    .type {
+        width: 110px;
+        padding-bottom: 180px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    .type .type--head p {
+        font-size: 24px;
+    }
+    .color {
+        width: 100%;
+    }
+    .color .color-head {
+        font-size: 24px;
+    }
+    .trademark {
+        padding-bottom: 210px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    .trademark--head p {
+        font-size: 24px;
     }
 }
