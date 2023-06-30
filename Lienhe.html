@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---bostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="header0">
+            <div class="box-tool">
+                <img src="./imgs/icons/tool.png" alt="" id="click-img">
+                <p class="normal-text">Trang sức</p>
+            </div>
+            <div class="box-tool">
+                <button class="btn-none">
+                    <i class="fa fa-search hover-color-lighCy" style="font-size: 18px;"></i>
+                </button>
+                <img src="./imgs/icons/Person.png" alt="" class="img-special" onclick="redirectToPage('login.html')">
+            </div>
+        </div>
+        <div class="page-header">
+            <div class="container">
+                <div class="header-1">
+                    <div class="profile">
+                        <a href="./login.html"><img src="./img/Person.png" alt="" class="profile--img"></a>
+                    </div>
+                    <div class="header-content">
+                        <div class="contact--info">
+                            <p><span>Gọi ngay : 1900 6750</span> - Hỗ trợ 7 ngày trong tuần từ 9h - 21h</p>
+                        </div>
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="search..." class="search-content">
+                            </form>
+                            <button>
+                                <i class="fa fa-search" style="font-size: 14px;"></i>
+                            </button>
+                            </form>
+                        </div>
+                        <div class="currency-unit">
+                            <select name="" id="">
+                                <option value="">VND</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top"></div>
+            <div class="container">
+                <div class="header-2">
+                    <div class="social-media">
+                        <ul class="main-list">
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#"><i class="fa-brands fa-square-instagram f-17 "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-none login-box">
+                        <div class="create-account">
+                            <img src="./imgs/items/register.png" alt="">
+                        </div>
+                        <div class="create-account">
+                            <img src="./imgs/items/login.png" alt="">
+                        </div>
+                    </div>
+                    <div class="big-content">
+                        <a href="">
+                            <img src="./imgs/blog/logo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="Shopping-bag">
+                        <img src="./imgs/blog/Shopping Bag.png" alt="" class="shopping-bag-item">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__nav-bottom">
+                    <div class="header-3">
+                        <div class="header-3-item">
+                            <a href="./index.html" class="text-decoration-none hover-color-lighCy">TRANG CHỦ</a>
+                        </div>
+                        <nav>
+                            <menu>
+                                <menuitem id="demo1">
+                                <a class="text-decoration-none hover-color-lighCy" href="./product.html">SẢN PHẨM</a>
+                                <menu>
+                                    <menuitem><a href="./product.html">NHẪN</a></menuitem>
+                                    <menuitem>
+                                    <a href="./product.html">BÔNG TAI</a>
+                                    <menu>
+                                        <menuitem><a href="./product.html">Bông tai mới</a></menuitem>
+                                        <menuitem><a href="./product.html">Bông tai 2018</a></menuitem>
+                                        <menuitem><a href="./product.html">Bông tai kim cương</a></menuitem>
+                                    </menu>
+                                    </menuitem>
+                                    <menuitem><a href="./product.html">DÂY CHUYỀN</a></menuitem>
+                                    <menuitem><a href="./product.html">TRÂM CÀI</a></menuitem>
+                                </menu>
+                        </nav>
+                        <div class="header-3-item">
+                            <a class="text-decoration-none hover-color-lighCy" href="./blog.html">BLOG</a>
+                        </div>
+                        <div class="header-3-item">
+                            <a class="text-decoration-none hover-color-lighCy">GIỚI THIỆU</a>
+                        </div>
+                        <div class="header-3-item">
+                            <a class="text-decoration-none hover-color-lighCy">LIÊN HỆ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Giao diện thu nhỏ-->
+        <div class="none">
+            <div class="header__nav-bottom">
+                <div class="header-4">
+                    <div class="header-4-item">
+                        <a href="./index.html">TRANG CHỦ</a>
+                    </div>
+                    <div class="header-4-item">
+                        <button class="accordion">SẢN PHẨM</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="">NHẪN</a>
+                                </li>
+                                <li>
+                                    <button class="accordion">BÔNG TAI</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li>
+                                                <a href="">Bông tai mới</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bông tai 2018</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bông tai kim cương</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">DÂY CHUYỀN</a>
+                                </li>
+                                <li>
+                                    <a href="">CHÂM CÀI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-4-item">
+                        <a href="./blog.html">BLOG</a>
+                    </div>
+                    <div class="header-4-item">
+                        <a href="">GIỚI THIỆU</a>
+                    </div>
+                    <div class="header-4-item">
+                        <a href="">LIÊN HỆ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-conent container">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29448.58388451975!2d104.41665851475226!3d22.68832678217497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36ccf82f511b0d17%3A0xae401f277bb02afa!2zdHQuIEPhu5FjIFDDoGksIFjDrW4gTeG6p24sIEjDoCBHaWFuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1688134855166!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content">
+                <div class="form-input">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="exampleFormControlInput2" class="form-label">Tên</label>
+                        <input class="form-control" type="text" placeholder="" >
+                        <label for="exampleFormControlInput3" class="form-label">SDT</label>
+                        <input class="form-control" type="number" placeholder="" >
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+                <div class="contact-text text-body">
+                    <div class="text-title">
+                        <h6>Theme Trang sức</h6>
+                        <p>Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn hảo cho phép quý khách tùy chỉnh màu sắc, bố cục.</p>
+                    </div>
+                    <div class="">
+                        <span style="font-weight: 700;"><i></i>Bộ phận Tư vấn khách hàng</span>
+                        <p>- support@sapo.vn</p>
+                        <p>- <span style="color: blue ;">1900 675</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-center">
+            <a href="">
+                <img src="./imgs/logo/logo.png">
+            </a>
+            <p class=" desc">Theme Trang sức là một theme bán hàng thân thiện với mobile. Với cơ chế tùy chỉnh hoàn
+                hảo cho phép quý khách tùy chỉnh màu sắc, bố cục.
+            </p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ladeco Building, 266 Doi Can Street, Hà Nội,</span>
+            <i class="fa-solid fa-phone mg-l-12"></i>
+            <span class="phone">1900 5678</span>
+            <i class="fa-solid fa-envelope mg-l-12"></i>
+            <a href="" class="email">support@sapo.vn</a>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-square-instagram f-17"></i>
+            </div>
+            <span class="monopoly">© Bản quyền thuộc về <b class="DQDT">DQDT Team</b> | Cung cấp bởi <a
+                    href="">Sapo</a></span>
+        </div>
+    </footer>
+
+</body>
+</html>
