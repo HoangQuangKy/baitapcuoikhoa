@@ -291,8 +291,11 @@ input[type="text"]::placeholder {
     font-size: 15px;
     text-decoration: none;
     color: #000000;
+    background-color: white;
 }
-
+menuitem >a{
+    background-color: whitesmoke;
+}
 .big-banner {
     width: 100%;
     overflow: hidden;

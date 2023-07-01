@@ -232,6 +232,7 @@ input[type="text"]::placeholder {
     font-size: 15px;
     text-decoration: none;
     color: #000000;
+    background-color: white;
 }
 
 .big-banner {
