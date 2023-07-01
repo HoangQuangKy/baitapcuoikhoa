@@ -59,6 +59,7 @@ body {
 }
 
 .contact--info {
+    width: 400px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -234,7 +235,12 @@ input[type="text"]::placeholder {
     color: #000000;
     background-color: white;
 }
-
+menuitem >a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    background-color: white;
+}
 .big-banner {
     width: 100%;
     overflow: hidden;
@@ -263,7 +269,10 @@ input[type="text"]::placeholder {
     visibility: hidden;
     opacity: 0;
 }
-
+.btn-none{
+    border: none;
+    background-color: transparent;
+}
 .d-none-special {
     visibility: hidden;
 }
@@ -556,7 +565,9 @@ li {
 
 /*----------------main-------------------------------*/
 main {
+    border-top: 1px solid var(--gainsboro);
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .main-conent {
@@ -583,13 +594,43 @@ main {
 }
 
 .form-input {
+    display: flex;
+    flex-direction: column;
     width: 70%;
 }
-
+.form-input label{
+    font-weight: 600;
+}
 .contact-text {
     margin-left: 20px;
 }
+.right{
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
+}
+.btn.btn-primary{
+    color: white;
+    border: none;
+    background-color: var(--light-cyan);
+    border-radius: 0;
+    font-weight: 600;
+}
+.btn-primary:hover{
+    background-color: var(--black);
+}
+.link-page{
+    margin-top: 20px;
+}
+.link-page span a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+.text-decoration.cry{
+    color: blue;
 
+}
 /* ================= Footer ============== */
 footer {
     position: relative;
@@ -640,7 +681,23 @@ footer {
 }
 
 
-
+@media (max-width: 1198px) {
+    .content{
+        flex-direction: column;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .contact-text{
+        margin: 0;
+    }
+    .text-body-conten>p{
+        margin: 0;
+    }
+    .text-body-conten{
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .page-header {
