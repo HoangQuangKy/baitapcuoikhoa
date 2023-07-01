@@ -535,20 +535,65 @@ menuitem>menu>menuitem.hover>menu>menuitem {
 li {
     font-size: 15px;
 }
-
+/* ========================table left================ */
+.btn-icn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-cyan);
+    position: fixed;
+    right: 0;
+    top: 45%;
+    
+}
+.btn-icn button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+.btn-icn i{
+    font-size: 50px;
+    color: white;
+    padding-left: 4px;
+}
+.sidebar--container-block{
+    width: 300px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background-color: wheat;
+    overflow: scroll;
+    display: none;
+}
+.sidebar--category li{
+    list-style: none;
+}
 /* ========================Introduction================ */
-.introduction {
+main{
+    position: relative;
+    border-top: 1px solid var(--gainsboro);
+    padding-top: 20px;
     margin-top: 40px;
-    margin-left: 162px;
+}
+.introduction {
+    width: 100%;
 }
 
 main .list-item {
-    width: 100%;
-    display: flex;
+    width: 500px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
     font-size: 18px;
 }
-
+main ul{
+    margin: 0;
+    padding: 0;
+}
 main .list-item .item {
+    padding-right: 5px;
+    width:auto;
+    height: 100%;
     list-style: none;
 }
 
@@ -573,12 +618,7 @@ main .list-item .item strong span {
     padding-bottom: 70px;
     border-bottom: 1px solid rgb(235, 235, 235);
     display: flex;
-    max-width: 1200px;
     margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .container1 ul {
@@ -1150,22 +1190,6 @@ main .list-item .item strong span {
     color: var(--primary-color);
 }
 
-/* 
-ul :
-box-shadow: 0 0 18px 0 rgba(0,0,0,0.12);
-width: 194px;
-
-a: 
-    display: block;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 8px 16px;
-}
-
-li
-font-size: 14px;
-    line-height: 30px;
-} */
 
 /* ==================== Footer ================== */
 .footer {
@@ -1466,5 +1490,23 @@ font-size: 14px;
 
     .address-content>a {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 986px) {
+    .describe{
+        display: none;
+    }
+    .sidebar--container{
+        display: none;
+    }
+    .main--container{
+        width: 100%;
+    }
+    .row-product-view{
+        z-index: -1;
+    }
+    .sort{
+        z-index: -1;
     }
 }
