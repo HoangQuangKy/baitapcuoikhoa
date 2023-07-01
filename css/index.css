@@ -39,6 +39,7 @@ body {
 }
 
 .profile {
+    padding: 30px;
     height: 50px;
     width: auto;
     text-align: center;

@@ -543,8 +543,8 @@ li {
     background-color: var(--light-cyan);
     position: fixed;
     right: 0;
-    top: 45%;
-
+    top: 20%;
+    z-index: 1;
 }
 
 .btn-icn button {
@@ -563,11 +563,11 @@ li {
 .sidebar--container-block {
     width: 300px;
     height: 100%;
-    right: -120px;
+    right: 0px;
     position: absolute;
-    background-color: wheat;
+    background-color: white;
     overflow: scroll;
-
+    border: 1px solid black;
 }
 
 .sidebar--category li {
@@ -1257,11 +1257,6 @@ main .list-item .item strong span {
 
 /* ==============Reponsive================ */
 @media (max-width: 456px) {
-    .btn-icn {
-        display: block;
-        visibility: inherit;
-    }
-
     .nav--panel__info {
         display: none;
     }
@@ -1539,5 +1534,9 @@ main .list-item .item strong span {
 
     .sort {
         z-index: -1;
+    }
+    .btn-icn {
+        display: block;
+        visibility: inherit;
     }
 }

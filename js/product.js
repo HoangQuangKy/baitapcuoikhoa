@@ -138,5 +138,10 @@ let btnIcnEles = document.getElementById("btn-add");
 let btnBlockEles = document.getElementById("list-none");
 btnIcnEles.addEventListener("click", () => {
     btnBlockEles.classList.toggle("block")
+    if (btnBlockEles.classList.contains("block")) {
+        btnIcnEles.style.right = "300px";   
+    }else{
+        btnIcnEles.style.right = "0px"
+    }
 })
 
