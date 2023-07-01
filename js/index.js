@@ -93,8 +93,7 @@ menuButtonEle.addEventListener("click", () => {
   noneELe.classList.toggle("none");
   noneELe.classList.toggle("content-none")
 })
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {

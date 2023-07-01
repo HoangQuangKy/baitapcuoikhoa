@@ -111,3 +111,26 @@ window.addEventListener("DOMContentLoaded", () => {
       <p style="display: flex;padding-top:15px; font-size: 15px">${email}</p>`
     }
 })
+let menuButtonEle = document.getElementById("click-img");
+let noneELe = document.getElementsByClassName("none")[0];
+menuButtonEle.addEventListener("click", () => {
+    noneELe.classList.toggle("none");
+    noneELe.classList.toggle("content-none")
+})
+let acc = document.getElementsByClassName("accordion");
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
