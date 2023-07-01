@@ -35,6 +35,7 @@ body {
     display: flex;
     height: 50px;
     justify-content: space-between;
+    padding-left: 30px;
 }
 
 .profile {
@@ -43,7 +44,6 @@ body {
     overflow: hidden;
     align-items: center;
     display: flex;
-    padding-left: 32px;
 }
 
 .profile--img {

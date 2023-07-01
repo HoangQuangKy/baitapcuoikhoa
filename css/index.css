@@ -42,11 +42,9 @@ body {
     height: 50px;
     width: auto;
     text-align: center;
-
     overflow: hidden;
     align-items: center;
     display: flex;
-    padding-left: 32px;
 }
 
 .profile--img {
