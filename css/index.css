@@ -40,7 +40,7 @@ body {
 
 .profile {
     height: 50px;
-    width: 100%;
+    width: auto;
     text-align: center;
 
     overflow: hidden;

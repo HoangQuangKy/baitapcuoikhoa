@@ -98,7 +98,7 @@ body {
 
 .profile {
     height: 50px;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     align-items: center;
     display: flex;
@@ -688,18 +688,18 @@ main .list-item .item strong span {
     border-radius: 50%;
 }
 
-.product-meadi {
+.product-media {
     width: 100%;
     height: auto;
 }
 
-.product-meadi img {
+.product-media img {
     object-fit: fill;
     width: 100%;
     height: auto;
 }
 
-.product-meadi img:hover .overlay {
+.product-media img:hover .overlay {
     cursor: pointer;
     display: block;
 }
@@ -856,6 +856,15 @@ main .list-item .item strong span {
 .nav-category .nav-list .nav-item i {
     font-size: 12px;
     margin-right: 8px;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.fa {
+    display: flex;
+    align-items: center;
 }
 
 /* ======================== Filter Price======================= */

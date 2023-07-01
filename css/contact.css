@@ -39,7 +39,7 @@ body {
 
 .profile {
     height: 50px;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     align-items: center;
     display: flex;
