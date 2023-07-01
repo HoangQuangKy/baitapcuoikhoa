@@ -535,46 +535,53 @@ menuitem>menu>menuitem.hover>menu>menuitem {
 li {
     font-size: 15px;
 }
+
 /* ========================table left================ */
-.btn-icn{
+.btn-icn {
     width: 50px;
     height: 50px;
     background-color: var(--light-cyan);
     position: fixed;
     right: 0;
     top: 45%;
-    
+
 }
-.btn-icn button{
+
+.btn-icn button {
     width: 100%;
     height: 100%;
     background-color: transparent;
     border: none;
 }
-.btn-icn i{
+
+.btn-icn i {
     font-size: 50px;
     color: white;
     padding-left: 4px;
 }
-.sidebar--container-block{
+
+.sidebar--container-block {
     width: 300px;
     height: 100%;
-    right: 0;
+    right: -120px;
     position: absolute;
     background-color: wheat;
     overflow: scroll;
-    display: none;
+
 }
-.sidebar--category li{
+
+.sidebar--category li {
     list-style: none;
 }
+
 /* ========================Introduction================ */
-main{
+main {
     position: relative;
     border-top: 1px solid var(--gainsboro);
     padding-top: 20px;
     margin-top: 40px;
 }
+
 .introduction {
     width: 100%;
 }
@@ -586,13 +593,15 @@ main .list-item {
     align-items: center;
     font-size: 18px;
 }
-main ul{
+
+main ul {
     margin: 0;
     padding: 0;
 }
+
 main .list-item .item {
     padding-right: 5px;
-    width:auto;
+    width: auto;
     height: 100%;
     list-style: none;
 }
@@ -1233,8 +1242,26 @@ main .list-item .item strong span {
     color: var(--primary-color);
 }
 
+.btn-icn {
+    display: none;
+    visibility: hidden;
+}
+
+.btn-icn-hover-block {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 /* ==============Reponsive================ */
 @media (max-width: 456px) {
+    .btn-icn {
+        display: block;
+        visibility: inherit;
+    }
+
     .nav--panel__info {
         display: none;
     }
@@ -1494,19 +1521,23 @@ main .list-item .item strong span {
 }
 
 @media (max-width: 986px) {
-    .describe{
+    .describe {
         display: none;
     }
-    .sidebar--container{
+
+    .sidebar--container {
         display: none;
     }
-    .main--container{
+
+    .main--container {
         width: 100%;
     }
-    .row-product-view{
+
+    .row-product-view {
         z-index: -1;
     }
-    .sort{
+
+    .sort {
         z-index: -1;
     }
 }

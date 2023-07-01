@@ -186,10 +186,10 @@
           </div>
         </div>
       </div>
-      <div class="btn-icn">
-          <button id="click-block" onclick=""><i class="fa fa-plus"></i></button>
+      <div class="btn-icn" id="btn-add">
+        <button id="click-block" onclick=""><i class="fa fa-plus"></i></button>
       </div>
-      <div class="btn-icn-hover-block">
+      <div class="btn-icn-hover-block" id="list-none">
         <div class="sidebar--container-block">
           <div class="sidebar--category">
             <div class="sidebar--title">
@@ -232,8 +232,10 @@
                 <p class="filter-head">Theo mức giá</p>
               </div>
               <form id="range-total" onsubmit="event.preventDefault();">
-                <input type="range" name="amountRange" min="0" max="1000000" value="0" oninput="this.form.amountInput.value=this.value">
-                <input type="number" name="amountInput" min="0" max="1000000" value="0" oninput="this.form.amountRange.value=this.value">
+                <input type="range" name="amountRange" min="0" max="1000000" value="0"
+                  oninput="this.form.amountInput.value=this.value">
+                <input type="number" name="amountInput" min="0" max="1000000" value="0"
+                  oninput="this.form.amountRange.value=this.value">
                 <button class="btn-filter-price" type="submit">
                   Lọc giá
                 </button>

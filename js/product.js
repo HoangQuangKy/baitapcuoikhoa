@@ -134,3 +134,9 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+let btnIcnEles = document.getElementById("btn-add");
+let btnBlockEles = document.getElementById("list-none");
+btnIcnEles.addEventListener("click", () => {
+    btnBlockEles.classList.toggle("block")
+})
+
